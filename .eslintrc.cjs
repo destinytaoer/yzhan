@@ -1,7 +1,5 @@
 module.exports = {
   extends: [
-    'airbnb-typescript',
-    'airbnb/hooks',
     'plugin:import/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
@@ -36,7 +34,7 @@ module.exports = {
     'import/extensions': [
       'error',
       'never',
-      { ignorePackages: true }
+      {ignorePackages: true}
     ],
     'import/no-unresolved': 'error',
     '@typescript-eslint/no-shadow': 0,
@@ -51,7 +49,7 @@ module.exports = {
     },
     'import/resolver': {
       typescript: {
-        project: './packages/*/tsconfig.json'
+        project: './tsconfig.json'
       },
     },
   }

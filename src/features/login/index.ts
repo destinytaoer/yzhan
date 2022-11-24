@@ -1,15 +1,23 @@
 import { app } from '@/domain/services/cloudbase'
 
-export function login() {
+export async function login() {
   const auth = app.auth({ persistence: 'local' })
   console.log('auth', auth.currentUser)
-  if (!auth.currentUser) {
-    app
-      .auth({ persistence: 'local' })
-      .signUpWithEmailAndPassword('zhuweilong370@gmail.com', '713669tz')
-      .then((item) => {
-        console.log('logined', item)
-      })
-      .catch((e) => console.log('err', e))
+  const user = auth.currentUser
+  if (!user) {
+    try {
+      const item = await auth.signInWithEmailAndPassword('zhuweilong370@gmail.com', '713669tz')
+      console.log('logined', item)
+      // if (!(await auth.isUsernameRegistered(username))) { // 检查用户名是否绑定过
+      //   await auth.currentUser.updateUsername(username) // 绑定用户名
+      // }
+    } catch (e) {
+      console.log('err', e)
+    }
+  } else {
+    // await user.update({
+    //   nickName: 'destiny',
+    //   gender: 'MALE',
+    // })
   }
 }

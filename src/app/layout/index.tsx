@@ -31,21 +31,20 @@ const PageLayout: React.FC<PropsWithChildren> = ({ children }) => {
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
-        <div className='logo' />
-        <Menu defaultSelectedKeys={['1']} mode='inline' items={items} />
+        <div className='flex items-center px-5 h-16'>
+          <img src='./vite.svg' alt='Vite logo' />
+          <h1 className='text-lg ml-2 text-gray-50'>一盏茶时</h1>
+        </div>
+        <Menu theme='dark' defaultSelectedKeys={['1']} mode='inline' items={items} />
       </Sider>
       <Layout className='site-layout'>
-        <Header className='site-layout-background' style={{ padding: 0 }} />
+        <Header className='site-layout-background h-24' style={{ padding: 0 }} />
         <Content style={{ margin: '0 16px' }}>
-          <Breadcrumb style={{ margin: '16px 0' }}>
-            <Breadcrumb.Item>User</Breadcrumb.Item>
-            <Breadcrumb.Item>Bill</Breadcrumb.Item>
-          </Breadcrumb>
           <div className='site-layout-background' style={{ padding: 24, minHeight: 360 }}>
             <Outlet />
           </div>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+        <Footer style={{ textAlign: 'center' }}>一盏茶时 ©2022 Created by Destiny</Footer>
       </Layout>
     </Layout>
   )

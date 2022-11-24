@@ -8,8 +8,11 @@ import zhCN from 'antd/locale/zh_CN'
 
 import 'antd/dist/reset.css'
 import './styles/global.css'
+import { login } from '@/features/login'
 
 dayjs.locale('zh-cn')
+
+login()
 
 const App = () => {
   return (

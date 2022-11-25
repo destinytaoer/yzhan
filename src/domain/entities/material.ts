@@ -1,13 +1,18 @@
+import { PriceSet } from './price'
+
 /**
  * 原材料
  */
 export interface Material {
   _id_: ID
+  // 名称
   name: string
+  // 分类
   category: MaterialCategory
-  preset_wholesale_price?: number
-  recommended_retail_price?: number
+  // 计量单位
   unit: string
+  // 价格集合
+  price_set?: PriceSet
 }
 
 /**

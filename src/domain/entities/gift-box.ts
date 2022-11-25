@@ -2,7 +2,7 @@
  * 礼盒
  */
 export interface GiftBox {
-  _id_: ID
+  _id: ID
   name: string
   grade: GiftBoxGrade
   wholesale_price_preset: number

@@ -5,7 +5,7 @@ import { PriceSet } from './price'
  * 茶包
  */
 export interface TeaBag {
-  _id_: ID
+  _id: ID
   // 名称
   name: string
   // 品类

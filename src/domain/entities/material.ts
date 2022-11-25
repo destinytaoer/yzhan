@@ -4,7 +4,7 @@ import { PriceSet } from './price'
  * 原材料
  */
 export interface Material {
-  _id_: ID
+  _id: ID
   // 名称
   name: string
   // 分类
@@ -21,8 +21,14 @@ export interface Material {
 export enum MaterialCategory {
   // 果干
   DriedFruit = 'DRIED_FRUIT',
-  // 药材
-  MedicinalMaterial = 'MEDICINAL_MATERIAL',
+  // 花
+  Flower = 'FLOWER',
+  // 茶
+  Tea = 'TEA',
+  // 中药材
+  ChineseMedicine = 'CHINESE_MEDICINE',
+  // 保健类
+  Healthcare = 'HEALTHCARE',
   // 糖
-  Sugar = 'Sugar',
+  Sugar = 'SUGAR',
 }

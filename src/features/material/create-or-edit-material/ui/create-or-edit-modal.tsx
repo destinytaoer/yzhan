@@ -35,26 +35,15 @@ const CreateOrEditMaterialModal: FC<ICreateOrEditMaterialModalProps> = ({ modalR
   const onFinish = async (values: Partial<Material>) => {
     console.log(values)
     const now = new Date().valueOf()
+
     if (data) {
       update(data._id, {
-        name: values.name,
-        category: values.category,
-        unit: values.unit,
-        price_set: {
-          agency_price: values.price_set?.agency_price ?? null,
-          recommended_retail_price: values.price_set?.agency_price ?? null,
-        },
+        ...values,
         updated_at: now,
       })
     } else {
       create({
-        name: values.name,
-        category: values.category,
-        unit: values.unit,
-        price_set: {
-          agency_price: values.price_set?.agency_price ?? null,
-          recommended_retail_price: values.price_set?.agency_price ?? null,
-        },
+        ...values,
         created_at: now,
         updated_at: now,
       })
@@ -62,16 +51,24 @@ const CreateOrEditMaterialModal: FC<ICreateOrEditMaterialModalProps> = ({ modalR
   }
 
   useEffect(() => {
-    console.log('reset')
-    form.resetFields()
-  }, [data])
+    const initialValues: Partial<Material> = {
+      name: '',
+      category: undefined,
+      unit: '',
+      price_set: {
+        agency_price: null,
+        recommended_retail_price: null,
+      },
+    }
+    // 避免 form 未初始化报错
+    if (data === null) return
 
-  const initialValues: Partial<Material> = data ?? {}
-  console.log('inital', initialValues)
+    form.setFieldsValue(data ?? initialValues)
+  }, [data])
 
   return (
     <Modal title={`${data ? '编辑' : '新建'}原材料`} open={open} onCancel={hide} closable maskClosable={false} centered footer={null}>
-      <Form layout='vertical' labelAlign='left' form={form} initialValues={initialValues} onFinish={onFinish}>
+      <Form layout='vertical' labelAlign='left' form={form} onFinish={onFinish}>
         <Form.Item label='名称' name='name' required>
           <Input placeholder='名称' />
         </Form.Item>

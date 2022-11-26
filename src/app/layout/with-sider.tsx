@@ -12,7 +12,7 @@ interface IWithSiderLayoutProps {
 const WithSiderLayout: FC<IWithSiderLayoutProps> = ({ menus }) => {
   return (
     <Layout className='h-full'>
-      <Sider theme='light' width={300}>
+      <Sider theme='light' className='border-r' width={300}>
         <Menu theme='light' className='flex-auto justify-end min-w-0' items={menus} />
       </Sider>
       <Layout>

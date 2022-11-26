@@ -1,3 +1,25 @@
-@tailwind base;
+/*@tailwind base;*/
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .page-container {
+        @apply px-6 py-5 h-full box-border
+    }
+
+    .page-main {
+        @apply px-8 py-5 bg-white h-full shadow box-border rounded-lg
+    }
+
+    .page-header {
+        @apply h-10 flex items-center justify-between
+    }
+
+    .page-content {
+
+    }
+
+    .page-title {
+        @apply text-2xl
+    }
+}

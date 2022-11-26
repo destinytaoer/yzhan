@@ -1,7 +1,6 @@
-import { app } from '@/domain/services/cloudbase'
+import { auth } from '@/domain/services/cloudbase'
 
 export async function login() {
-  const auth = app.auth({ persistence: 'local' })
   console.log('auth', auth.currentUser)
   const user = auth.currentUser
   if (!user) {

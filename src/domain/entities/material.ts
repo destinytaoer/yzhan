@@ -13,6 +13,8 @@ export interface Material {
   unit: string
   // 价格集合
   price_set?: PriceSet
+  created_at: number
+  updated_at: number
 }
 
 /**
@@ -31,4 +33,18 @@ export enum MaterialCategory {
   Healthcare = 'HEALTHCARE',
   // 糖
   Sugar = 'SUGAR',
+}
+
+export const MaterialLabelMap = new Map([
+  [MaterialCategory.DriedFruit, '果干'],
+  [MaterialCategory.Flower, '花'],
+  [MaterialCategory.Tea, '茶'],
+  [MaterialCategory.ChineseMedicine, '中药材'],
+  [MaterialCategory.Healthcare, '保健类'],
+  [MaterialCategory.Sugar, '糖'],
+])
+
+export function displayMaterialCategory(category?: MaterialCategory) {
+  if (!category) return ''
+  return MaterialLabelMap.get(category) ?? '未知'
 }

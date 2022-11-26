@@ -22,24 +22,16 @@ export const DataManagementRoute: RouteObject[] = [
 
 export const DataManagementMenuItems: MenuProps['items'] = [
   {
-    label: <Link to='/data'>基础数据</Link>,
-    key: 'data',
+    label: <Link to='/data/material'>原材料管理</Link>,
+    key: 'material',
     icon: <DatabaseOutlined />,
   },
   {
-    label: <Link to='/data'>套餐管理</Link>,
-    key: 'package',
+    label: <Link to='/data/tea-bag'>茶包管理</Link>,
+    key: 'tea-bag',
   },
   {
-    label: <Link to='/stock'>库存管理</Link>,
-    key: 'stock',
-  },
-  {
-    label: <Link to='/order'>订单管理</Link>,
-    key: 'order',
-  },
-  {
-    label: <Link to='/user'>用户管理</Link>,
-    key: 'user',
+    label: <Link to='/data/gift-box'>礼盒管理</Link>,
+    key: 'gift-box',
   },
 ]

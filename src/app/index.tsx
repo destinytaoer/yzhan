@@ -6,8 +6,8 @@ import dayjs from 'dayjs'
 import 'dayjs/locale/zh-cn'
 import zhCN from 'antd/locale/zh_CN'
 
-import 'antd/dist/reset.css'
 import './styles/global.css'
+import 'antd/dist/reset.css'
 import { login } from '@/features/login'
 
 dayjs.locale('zh-cn')

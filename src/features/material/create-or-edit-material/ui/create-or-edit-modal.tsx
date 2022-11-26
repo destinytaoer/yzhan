@@ -2,7 +2,7 @@ import { FC, RefObject, useEffect } from 'react'
 import { Button, Form, Input, InputNumber, message, Modal, Select } from 'antd'
 import { IModalRef, useModalImperative } from '@/shared/hooks/useModalImperative'
 import { Material, MaterialLabelMap } from '@/domain/entities/material'
-import { createMaterial, updateMaterial } from '@/domain/services/material'
+import MaterialService from '@/domain/services/material'
 import { useRequest } from 'ahooks'
 
 interface ICreateOrEditMaterialModalProps {
@@ -13,7 +13,7 @@ interface ICreateOrEditMaterialModalProps {
 const CreateOrEditMaterialModal: FC<ICreateOrEditMaterialModalProps> = ({ modalRef, onSuccess }) => {
   const { data, open, hide } = useModalImperative(modalRef)
 
-  const { run: create } = useRequest(createMaterial, {
+  const { run: create } = useRequest(MaterialService.create, {
     manual: true,
     onSuccess: () => {
       hide()
@@ -21,7 +21,7 @@ const CreateOrEditMaterialModal: FC<ICreateOrEditMaterialModalProps> = ({ modalR
       onSuccess()
     },
   })
-  const { run: update } = useRequest(updateMaterial, {
+  const { run: update } = useRequest(MaterialService.update, {
     manual: true,
     onSuccess: () => {
       hide()

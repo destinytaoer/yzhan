@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { message, Modal } from 'antd'
 import TableActions, { Action } from '@/widgets/table-actions'
 import { useRequest } from 'ahooks'
-import { removeMaterial } from '@/domain/services/material'
+import MaterialService from '@/domain/services/material'
 import { Material } from '@/domain/entities/material'
 
 interface IMaterialActionsProps {
@@ -13,7 +13,7 @@ interface IMaterialActionsProps {
 }
 
 const MaterialActions: FC<IMaterialActionsProps> = ({ data, onDetail, onEdit, onSuccess }) => {
-  const { run: remove } = useRequest(removeMaterial, {
+  const { run: remove } = useRequest(MaterialService.remove, {
     manual: true,
     onSuccess() {
       message.success('删除成功')

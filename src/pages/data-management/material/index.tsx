@@ -9,10 +9,11 @@ import { Material } from '@/domain/entities/material'
 
 const MaterialPage: FC = () => {
   const { data, refresh } = useRequest(getMaterials)
-
   const { data: list = [] } = data ?? {}
+
   const [detailDraw, showDetailDraw] = useModal<Material>()
   const [createOrEditModal, showCreateOrEditModal] = useModal<Material | undefined>()
+
   return (
     <div className='page-container'>
       <div className='page-main'>

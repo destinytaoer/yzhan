@@ -20,6 +20,14 @@ export interface TeaBag {
   packaging: Packaging
   // 价格集合
   price_set: PriceSet
+  created_at: number
+  updated_at: number
+}
+
+// 用于更新和创建
+export type PartialTeaBag = Partial<TeaBag> & {
+  formula?: Partial<TeaBagMaterial>[]
+  packaging?: Partial<Packaging>
 }
 
 /**
@@ -77,4 +85,23 @@ export interface PackagingSize {
   width: number
   height: number
   unit: string
+}
+
+export function displayFormula(formula: TeaBagMaterial[]) {
+  return formula.map((material) => `${material.name} ${material.quantity} ${material.unit}`).join(' + ')
+}
+
+export const SuitCrowdsMap = new Map([
+  [SuitCrowds.Parent, { label: '父母养生', color: 'grey' }],
+  [SuitCrowds.Children, { label: '孩子养生', color: 'cyan' }],
+  [SuitCrowds.Male, { label: '男性养生', color: 'blue' }],
+  [SuitCrowds.Female, { label: '少女养生', color: 'pink' }],
+  [SuitCrowds.StayUpLate, { label: '熬夜养生', color: 'grey' }],
+  [SuitCrowds.WhiteningAndBeautifying, { label: '美白养颜', color: 'gold' }],
+  [SuitCrowds.Menses, { label: '女生姨妈', color: 'red' }],
+])
+
+export function displaySuitCrowds(suit_crowds: SuitCrowds) {
+  if (suit_crowds) {
+  }
 }

@@ -69,10 +69,10 @@ const CreateOrEditMaterialModal: FC<ICreateOrEditMaterialModalProps> = ({ modalR
   return (
     <Modal title={`${data ? '编辑' : '新建'}原材料`} open={open} onCancel={hide} closable maskClosable={false} centered footer={null}>
       <Form layout='vertical' labelAlign='left' form={form} onFinish={onFinish}>
-        <Form.Item label='名称' name='name' required>
+        <Form.Item label='名称' name='name' rules={[{ required: true }]}>
           <Input placeholder='名称' />
         </Form.Item>
-        <Form.Item label='分类' name='category' required>
+        <Form.Item label='分类' name='category' rules={[{ required: true }]}>
           <Select placeholder='请选择'>
             {[...MaterialLabelMap.entries()].map((item) => {
               const [key, label] = item
@@ -84,7 +84,7 @@ const CreateOrEditMaterialModal: FC<ICreateOrEditMaterialModalProps> = ({ modalR
             })}
           </Select>
         </Form.Item>
-        <Form.Item label='单位' name='unit' required>
+        <Form.Item label='单位' name='unit' rules={[{ required: true }]}>
           <Input placeholder='单位' />
         </Form.Item>
         <Form.Item label='预置代理价' name={['price_set', 'agency_price']}>

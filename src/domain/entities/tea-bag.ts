@@ -17,7 +17,7 @@ export interface TeaBag {
   // 功效
   effects: string[]
   // 包装方式
-  packaging: Packaging
+  packaging?: Packaging
   // 价格集合
   price_set: PriceSet
   created_at: number
@@ -48,6 +48,19 @@ export enum TeaBagCategory {
   SoybeanMilk = 'SOYBEAN_MILK',
 }
 
+export const TeaBagCategoryMap = new Map([
+  [TeaBagCategory.FruitDrink, '果饮'],
+  [TeaBagCategory.ScentedTea, '花茶'],
+  [TeaBagCategory.SoupStock, '汤包'],
+  [TeaBagCategory.Stew, '炖煮类'],
+  [TeaBagCategory.NourishingStew, '滋补炖煮类'],
+  [TeaBagCategory.SoybeanMilk, '豆类'],
+])
+
+export function displayTeaBagCategory(category: TeaBagCategory) {
+  return TeaBagCategoryMap.get(category) ?? '未知'
+}
+
 /**
  * 适合人群
  */
@@ -66,6 +79,26 @@ export enum SuitCrowds {
   WhiteningAndBeautifying = 'WHITENING_AND_BEAUTIFYING',
   // 女生姨妈
   Menses = 'MENSES',
+}
+
+export const SuitCrowdsMap = new Map([
+  [SuitCrowds.Parent, { label: '父母养生', color: 'grey' }],
+  [SuitCrowds.Children, { label: '孩子养生', color: 'cyan' }],
+  [SuitCrowds.Male, { label: '男性养生', color: 'blue' }],
+  [SuitCrowds.Female, { label: '少女养生', color: 'pink' }],
+  [SuitCrowds.StayUpLate, { label: '熬夜养生', color: 'grey' }],
+  [SuitCrowds.WhiteningAndBeautifying, { label: '美白养颜', color: 'gold' }],
+  [SuitCrowds.Menses, { label: '女生姨妈', color: 'red' }],
+])
+
+export function displaySuitCrowds(suit_crowds: SuitCrowds[]) {
+  if (!suit_crowds) return []
+
+  return suit_crowds
+    .map((suit_crowd) => {
+      return SuitCrowdsMap.get(suit_crowd)!
+    })
+    .filter((item) => !!item)
 }
 
 export interface TeaBagMaterial extends Material {
@@ -88,20 +121,13 @@ export interface PackagingSize {
 }
 
 export function displayFormula(formula: TeaBagMaterial[]) {
-  return formula.map((material) => `${material.name} ${material.quantity} ${material.unit}`).join(' + ')
+  return formula.map((material) => `${material.name} ${material.quantity} ${material.unit}`)
 }
 
-export const SuitCrowdsMap = new Map([
-  [SuitCrowds.Parent, { label: '父母养生', color: 'grey' }],
-  [SuitCrowds.Children, { label: '孩子养生', color: 'cyan' }],
-  [SuitCrowds.Male, { label: '男性养生', color: 'blue' }],
-  [SuitCrowds.Female, { label: '少女养生', color: 'pink' }],
-  [SuitCrowds.StayUpLate, { label: '熬夜养生', color: 'grey' }],
-  [SuitCrowds.WhiteningAndBeautifying, { label: '美白养颜', color: 'gold' }],
-  [SuitCrowds.Menses, { label: '女生姨妈', color: 'red' }],
-])
+export function displayEffects(effects: string[]) {
+  return effects.join('|')
+}
 
-export function displaySuitCrowds(suit_crowds: SuitCrowds) {
-  if (suit_crowds) {
-  }
+export function splitEffects(effects: string) {
+  return effects.split('|').map((item) => item.trim())
 }

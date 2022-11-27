@@ -13,8 +13,8 @@ export interface Material {
   unit: string
   // 价格集合
   price_set?: PriceSet
-  created_at: number
-  updated_at: number
+  created_at: string
+  updated_at: string
 }
 
 /**

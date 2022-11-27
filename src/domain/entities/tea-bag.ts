@@ -20,8 +20,8 @@ export interface TeaBag {
   packaging?: Packaging
   // 价格集合
   price_set: PriceSet
-  created_at: number
-  updated_at: number
+  created_at: string
+  updated_at: string
 }
 
 // 用于更新和创建
@@ -102,7 +102,9 @@ export function displaySuitCrowds(suit_crowds: SuitCrowds[]) {
 }
 
 export interface TeaBagMaterial extends Material {
-  quantity: number
+  // 数量, 以字符串主要考虑到是以展示为主, 为了更加灵活
+  // 满足 1-2 等情况
+  quantity: string
 }
 
 /**

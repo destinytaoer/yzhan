@@ -1,22 +1,24 @@
 import { db } from './cloudbase'
 import { TeaBag, PartialTeaBag } from '@/domain/entities/tea-bag'
 
+const collection = db.collection('tea-bag')
+
 export default class TeaBagService {
-  static collection = 'tea-bag'
+  static collection = collection
 
   static list() {
-    return db.collection(TeaBagService.collection).get() as Promise<Response<TeaBag>>
+    return collection.get() as Promise<Response<TeaBag>>
   }
 
   static create(data: PartialTeaBag) {
-    return db.collection(TeaBagService.collection).add(data)
+    return collection.add(data)
   }
 
   static update(id: string, data: PartialTeaBag) {
-    return db.collection(TeaBagService.collection).doc(id).update(data)
+    return collection.doc(id).update(data)
   }
 
   static remove(id: string) {
-    return db.collection(TeaBagService.collection).doc(id).remove()
+    return collection.doc(id).remove()
   }
 }

@@ -36,7 +36,7 @@ const CreateOrEditTeaBagModal: FC<ICreateOrEditTeaBagModalProps> = ({ modalRef, 
 
   const onFinish = async (values: PartialTeaBag) => {
     const { effects, ...others } = values
-    const now = new Date().valueOf()
+    const now = new Date().toISOString()
     const realEffects = splitEffects(effects?.toString() ?? '')
 
     const updateData = {

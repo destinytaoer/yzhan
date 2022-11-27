@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Form, Space, Select, InputNumber, Button } from 'antd'
+import { Form, Space, Select, Input, Button } from 'antd'
 import { PlusOutlined, MinusCircleOutlined } from '@ant-design/icons'
 import { useRequest } from 'ahooks'
 import MaterialService from '@/domain/services/material'
@@ -38,7 +38,7 @@ const FormulaForm: FC<IFormulaFormProps> = ({ fieldName }) => {
                 </Select>
               </Form.Item>
               <Form.Item className='mb-0' {...field} name={[field.name, 'quantity']} rules={[{ required: true, message: '请输入数量' }]}>
-                <InputNumber className='w-40' placeholder='数量' />
+                <Input className='w-40' placeholder='数量, 如 1、1-2 等' />
               </Form.Item>
               <MinusCircleOutlined onClick={() => remove(field.name)} />
             </Space>

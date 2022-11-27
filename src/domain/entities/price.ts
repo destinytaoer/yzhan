@@ -6,11 +6,13 @@ export interface GradientPrice {
 }
 
 export interface PriceSet {
-  // 梯度批发价
+  // 梯度批发价 - 进货
   gradient_wholesale_price?: GradientPrice[]
-  // 预置代理价
+  // 预置批发价 - 向外销售
+  wholesale_price?: number | null
+  // 预置代理价 - 向外销售
   agency_price?: number | null
-  // 建议零售价
+  // 建议零售价 - 代理销售
   recommended_retail_price?: number | null
 }
 

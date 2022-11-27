@@ -8,6 +8,8 @@ export interface TeaBag {
   _id: ID
   // 名称
   name: string
+  // 编号
+  no: string
   // 品类
   category: TeaBagCategory
   // 配方
@@ -38,6 +40,10 @@ export enum TeaBagCategory {
   FruitDrink = 'FRUIT_DRINK',
   // 花茶
   ScentedTea = 'SCENTED_TEA',
+  // 养生类
+  HealthPreservation = 'HEALTH_PRESERVATION',
+  // 调理类
+  Recuperate = 'RECUPERATE',
   // 汤包
   SoupStock = 'SOUP_STOCK',
   // 炖煮类
@@ -51,6 +57,8 @@ export enum TeaBagCategory {
 export const TeaBagCategoryMap = new Map([
   [TeaBagCategory.FruitDrink, '果饮'],
   [TeaBagCategory.ScentedTea, '花茶'],
+  [TeaBagCategory.HealthPreservation, '养生类'],
+  [TeaBagCategory.Recuperate, '调理类'],
   [TeaBagCategory.SoupStock, '汤包'],
   [TeaBagCategory.Stew, '炖煮类'],
   [TeaBagCategory.NourishingStew, '滋补炖煮类'],
@@ -79,6 +87,8 @@ export enum SuitCrowds {
   WhiteningAndBeautifying = 'WHITENING_AND_BEAUTIFYING',
   // 女生姨妈
   Menses = 'MENSES',
+  // 办公室
+  Office = 'OFFICE',
 }
 
 export const SuitCrowdsMap = new Map([
@@ -89,6 +99,7 @@ export const SuitCrowdsMap = new Map([
   [SuitCrowds.StayUpLate, { label: '熬夜养生', color: 'grey' }],
   [SuitCrowds.WhiteningAndBeautifying, { label: '美白养颜', color: 'gold' }],
   [SuitCrowds.Menses, { label: '女生姨妈', color: 'red' }],
+  [SuitCrowds.Office, { label: '办公室', color: 'grey' }],
 ])
 
 export function displaySuitCrowds(suit_crowds: SuitCrowds[]) {

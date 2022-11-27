@@ -74,7 +74,7 @@ const data = [
     no: '1-6',
     category: '果饮',
     formula: ['黄冰糖', '柠檬干', '小青桔', '墨红玫瑰', '黑枸杞'],
-    formula_des: ['小⻘桔 3 半颗', '柠檬 1⽚', '墨红玫瑰 1/2 朵', '⿊枸杞 2.5g', '黄冰糖 23g'],
+    formula_des: ['小⻘桔 3.5 颗', '柠檬 1⽚', '墨红玫瑰 1-2 朵', '⿊枸杞 2.5g', '黄冰糖 23g'],
     effects: ['作用：美白淡斑', '清热养颜', '防辐射抗氧化', '补充维生素'],
     suit_crowds: ['美白养颜'],
     '0-50': '3',
@@ -144,7 +144,7 @@ const data = [
     no: '1-11',
     category: '果饮',
     formula: ['冻干山楂', '金桔', '陈皮丝', '老陈皮'],
-    formula_des: ['冻⼲⼭楂 2 颗', '⾦桔 8g', '陈⽪丝 5g', '⽼陈⽪⼀⽚ 5g'],
+    formula_des: ['冻⼲⼭楂 2 颗', '⾦桔 8g', '陈⽪丝 5g', '⽼陈⽪ 1 ⽚'],
     effects: ['作用：调理虚不受补', '健脾和胃', '养阴安神', '湿热体质', '上热下寒', '提高免疫'],
     suit_crowds: ['男士养生'],
     '0-50': '3',
@@ -186,7 +186,7 @@ const data = [
     no: '2-1',
     category: '养生花茶',
     formula: ['金银花', '牛蒡根', '胎菊', '桂花', '决明子', '枸杞'],
-    formula_des: ['⾦银花 2g', '⽜蒡根 2/3 ⽚', '胎菊10 朵', '桂花（适量⼀⼩丢）', '决明⼦4g', '枸杞 10g'],
+    formula_des: ['⾦银花 2g', '⽜蒡根 2-3 ⽚', '胎菊10 朵', '桂花2g', '决明⼦4g', '枸杞 10g'],
     effects: ['作用：清热降火', '养肝护肝', '降心火解毒', '适合内热压力大人群'],
     suit_crowds: ['熬夜养生', '男士养生'],
     '0-50': '2',
@@ -214,7 +214,7 @@ const data = [
     no: '2-3',
     category: '养生花茶',
     formula: ['茉莉花', '墨红玫瑰', '金丝皇菊', '藏红花'],
-    formula_des: ['金丝皇菊 2/3 朵', '藏红花 8/10 根', '茉莉花 1g', '墨红玫瑰 1/2 朵'],
+    formula_des: ['金丝皇菊 2-3 朵', '藏红花 8-10 根', '茉莉花 1g', '墨红玫瑰 1-2 朵'],
     effects: ['作用：祛黄淡斑', '延缓衰老', '舒肝解郁', '提亮肤色', '抗氧化'],
     suit_crowds: ['少女养生'],
     '0-50': '2',
@@ -228,7 +228,7 @@ const data = [
     no: '2-4',
     category: '养生花茶',
     formula: ['墨红玫瑰', '陈皮丝', '桑葚', '桂圆', '红枣'],
-    formula_des: ['墨红玫瑰 1/2 朵', '桂圆 5 颗', '桑葚 5g', '红枣 8 ⽚', '陈⽪丝 5 克'],
+    formula_des: ['墨红玫瑰 1-2 朵', '桂圆 5 颗', '桑葚 5g', '红枣 8 ⽚', '陈⽪丝 5 克'],
     effects: ['作用：补肾护肝', '益气养神', '保护子宫卵', '增强免疫力', '疏肝解郁'],
     suit_crowds: ['女生姨妈', '熬夜养生', '少女养生', '父母养生'],
     '0-50': '2',
@@ -256,7 +256,7 @@ const data = [
     no: '2-6',
     category: '养生花茶',
     formula: ['茉莉花', '墨红玫瑰', '蒲公英根'],
-    formula_des: ['蒲公英根 10g', '茉莉花 1g', '墨红玫瑰 1/2 朵'],
+    formula_des: ['蒲公英根 10g', '茉莉花 1g', '墨红玫瑰 1-2 朵'],
     effects: ['作用：减脂瘦身', '纤体刮油', '清理肠道垃圾', '隔断脂肪吸收', '减轻内脏脂肪 '],
     suit_crowds: ['男士养生'],
     '0-50': '2',
@@ -284,7 +284,7 @@ const data = [
     no: '2-8',
     category: '养生花茶',
     formula: ['绿萝花', '绞股蓝', '三七花'],
-    formula_des: ['绿萝花 5 朵', '绞股蓝 3g', '三七花 5/8 朵'],
+    formula_des: ['绿萝花 5 朵', '绞股蓝 3g', '三七花 5-8 朵'],
     effects: [' 作用：适合血糖血压血脂尿酸过高人群', '软化血管', '清理血管垃圾', '降低血液粘稠度'],
     suit_crowds: ['父母养生'],
     '0-50': '2',
@@ -298,7 +298,7 @@ const data = [
     no: '2-9',
     category: '养生花茶',
     formula: ['陈皮丝', '枸杞', '桂圆', '红枣片', '黑糖'],
-    formula_des: ['陈⽪丝 5g', '桂圆 5 颗', '红枣⽚ 6 ⽚', '枸 杞 10g', '黑糖 1块'],
+    formula_des: ['陈⽪丝 5g', '桂圆 5 颗', '红枣⽚ 6 ⽚', '枸杞 10g', '黑糖 1块'],
     effects: ['作用：暖宫驱寒', '缓解经期不适', '改善不规律量少', '化瘀排毒'],
     suit_crowds: ['女生姨妈', '少女养生'],
     '0-50': '2',
@@ -312,7 +312,7 @@ const data = [
     no: '2-10',
     category: '养生花茶',
     formula: ['枸杞', '红枣', '黑糖', '生姜', '菊花', '玫瑰花'],
-    formula_des: ['红枣2g', '生姜4g', '菊花2朵', '枸杞（1 包独立装）', '玫瑰花4 朵', '黑糖1 块'],
+    formula_des: ['红枣2g', '生姜4g', '菊花2朵', '枸杞 4g', '玫瑰花4 朵', '黑糖1 块'],
     effects: ['作用：暖宫驱寒', '缓解经期不适'],
     suit_crowds: ['女生姨妈', '少女养生'],
     '0-50': '2',
@@ -326,7 +326,7 @@ const data = [
     no: '2-11',
     category: '养生花茶',
     formula: ['罗汉果仁', '麦冬', '胖大海', '金莲花', '甘草片'],
-    formula_des: ['罗汉果仁 2g', '⻨冬 8g', '胖⼤海 1 颗', '⾦莲花 1g', '⽢草⼩⽚12g'],
+    formula_des: ['罗汉果仁 2g', '⻨冬 8g', '胖⼤海 1 颗', '⾦莲花 1g', '⽢草12g'],
     effects: ['作用：护嗓润喉', '慢性咽炎', '止咳化痰', '消炎解毒', '喉咙'],
     suit_crowds: ['男士养生'],
     '0-50': '2',
@@ -340,7 +340,7 @@ const data = [
     no: '2-12',
     category: '养生花茶',
     formula: ['金银花', '金丝皇菊', '甘草片', '绿茶', '薄荷叶', '淡竹叶'],
-    formula_des: ['綠茶2g', '甘草3片', '金银花2g', '薄荷叶1g', '金丝皇菊4/5 朵', '淡竹叶1g'],
+    formula_des: ['绿茶2g', '甘草3片', '金银花2g', '薄荷叶1g', '金丝皇菊4-5 朵', '淡竹叶1g'],
     effects: ['作用：补气养心', '滋阴降火', '缓解疲劳', '醒神开郁', '宁神舒压'],
     suit_crowds: ['办公室'],
     '0-50': '2',
@@ -354,7 +354,7 @@ const data = [
     no: '2-13',
     category: '养生花茶',
     formula: ['洛神花', '刺梨', '无花果干', '柠檬片'],
-    formula_des: ['刺梨 3/5 颗', '柠檬⽚ 5g', '⽆花果⼲ 4g', '洛 神花 3 朵'],
+    formula_des: ['刺梨 3-5 颗', '柠檬⽚ 5g', '⽆花果⼲ 4g', '洛神花 3 朵'],
     effects: ['作用：美白亮肤', '消除自由基', '减少黑色素沉淀', '提高代谢功能'],
     suit_crowds: ['少女养生', '美白养颜'],
     '0-50': '1.8',
@@ -397,7 +397,7 @@ const data = [
     category: '养生类',
     formula: ['白芍', '白术', '白茯苓', '西镇甘草'],
     formula_des: ['⽩芍 6g', '⽩术 6g', '⽩茯苓 10g', '⻄镇⽢草 5g'],
-    effects: ['作用：美白淡斑｜补气养血｜滋养肌肤｜除湿利水', '调经活血'],
+    effects: ['作用：美白淡斑', '补气养血', '滋养肌肤', '除湿利水', '调经活血'],
     suit_crowds: ['少女养生', '美白养颜'],
     '0-50': '3',
     '50-500': '4',
@@ -410,7 +410,7 @@ const data = [
     no: '3-2',
     category: '养生类',
     formula: ['墨红玫瑰', '黑枸杞', '铁皮石斛花'],
-    formula_des: ['铁⽪⽯斛花 1 克', '⿊枸杞 2.5g', '墨红玫瑰 1/2'],
+    formula_des: ['铁⽪⽯斛花 1 克', '⿊枸杞 2.5g', '墨红玫瑰 1-2 朵'],
     effects: ['作用：抗糖抗衰', '滋养肝肾', '益血乌发', '润肠通便', '明目安神', '清热消肿'],
     suit_crowds: ['少女养生', '美白养颜'],
     '0-50': '3',
@@ -424,7 +424,7 @@ const data = [
     no: '3-3',
     category: '养生类',
     formula: ['藏红花', '桂圆', '红枣片', '党参', '黄芪', '当归'],
-    formula_des: ['党参 10 ⼩段', '⻩芪 8 ⽚', '当归 2 ⽚', '红枣 ⽚ 5 ⽚', '桂圆 5 颗', '藏红花 8/10 根'],
+    formula_des: ['党参 10 ⼩段', '⻩芪 8 ⽚', '当归 2 ⽚', '红枣 ⽚ 5 ⽚', '桂圆 5 颗', '藏红花 8-10 根'],
     effects: ['作用：补气养血', '调经暖宫', '手脚冰凉', '面色蜡黄', '头晕无力'],
     suit_crowds: ['女生姨妈'],
     '0-50': '3',
@@ -459,7 +459,7 @@ const data = [
     '50-500': '5.3',
     agency_price: '5.5',
     recommended_retail_price: '9',
-    packaging: '透明自封袋10*15cn',
+    packaging: '透明自封袋10*15cm',
   },
   {
     name: '古方酸梅汤',
@@ -468,7 +468,7 @@ const data = [
     formula: ['黄冰糖', '洛神花', '山楂片', '老陈皮', '桂花', '甘草片', '乌梅'],
     formula_des: ['洛神花 4g', '乌梅 10g', '⼭楂⽚ 10g', '⽢草 7g', '⽼陈⽪ 3g', '桂花 2g', '黄冰糖 40g'],
     effects: ['作用：消暑解渴', '生津开胃', '除烦安神', '美容养颜', '保肝护肝'],
-    suit_crowds: [''],
+    suit_crowds: [],
     '0-50': '4.5',
     '50-500': '5.3',
     agency_price: '5.5',
@@ -508,14 +508,7 @@ const data = [
     no: '5-1',
     category: '炖煮类',
     formula: ['枸杞', '红枣', '拉丝雪燕', '珍珠桃胶', '高山雪莲子', '椴木雪耳', '白杏仁露'],
-    formula_des: [
-      '拉丝雪燕 3 颗',
-      '珍珠桃胶 12颗',
-      '⾼⼭雪莲⼦ 12颗',
-      '椴⽊雪⽿ 1朵',
-      '独⽴包装(枸杞',
-      '红枣)<根据⾃ ⼰的利润来调整没有硬性要求的⽤量>',
-    ],
+    formula_des: ['拉丝雪燕 3 颗', '珍珠桃胶 12颗', '⾼⼭雪莲⼦ 12颗', '椴⽊雪⽿ 1朵', '枸杞 4g', '红枣2颗'],
     effects: ['作用：补充胶原蛋白', '清血降脂', '抗皱嫩肤', '滋阴润肺', '增强免疫力'],
     suit_crowds: ['少女养生', '美白养颜'],
     '0-50': '5.4',
@@ -529,7 +522,7 @@ const data = [
     no: '5-2',
     category: '炖煮类',
     formula: ['茯苓', '山药', '莲子', '椴木雪耳', '百合', '南杏仁'],
-    formula_des: ['山药2/3 片', '高山雪莲子10/12', '茯苓6/8 颗', '百合2g', '椴木雪耳1朵', '南杏仁3/5粒'],
+    formula_des: ['山药2-3 片', '高山雪莲子 10-12 颗', '茯苓6-8 颗', '百合2g', '椴木雪耳1朵', '南杏仁3-5粒'],
     effects: ['作用：内调美白王者', '滋阴润肺', '养肤养颜', '宁心安神', '健脾补气'],
     suit_crowds: ['美白养颜'],
     '0-50': '5.4',
@@ -581,3 +574,700 @@ const data = [
     packaging: '白磨砂自立袋12*20cm',
   },
 ]
+
+const materials = [
+  {
+    _id: 'a74b8f88-bfe4-44c2-838c-16aecf6eb9ed',
+    category: 'DRIED_FRUIT',
+    name: '凤梨',
+    unit: 'g',
+  },
+  {
+    _id: '3ede4296-7436-48e4-a794-fc2014a19bbe',
+    category: 'DRIED_FRUIT',
+    name: '冻⼲柠檬',
+    unit: '片',
+  },
+  {
+    _id: '2f788335-aa85-4916-a809-9a6e87d28d23',
+    category: 'DRIED_FRUIT',
+    name: '冻干百香果',
+    unit: 'g',
+  },
+  {
+    _id: 'ff5e4adc-4532-4107-8190-c379b10e4bf1',
+    category: 'DRIED_FRUIT',
+    name: '金桔片',
+    unit: 'g',
+  },
+  {
+    _id: 'f4376865-9062-43a8-a562-9a0b859db192',
+    category: 'DRIED_FRUIT',
+    name: '冻干山楂',
+    unit: '颗',
+  },
+  {
+    _id: '4a82baa2-941c-4df4-a82a-b91fa142d645',
+    category: 'DRIED_FRUIT',
+    name: '柠檬干',
+    unit: 'g',
+  },
+  {
+    _id: '0d6c75d3-ab94-47de-8c9f-c8dab50029d9',
+    category: 'DRIED_FRUIT',
+    name: '木瓜',
+    unit: 'g',
+  },
+  {
+    _id: '815c7bf2-11e6-4065-9cf6-cdcbe1098240',
+    category: 'DRIED_FRUIT',
+    name: '火龙果',
+    unit: 'g',
+  },
+  {
+    _id: '0d73e14e-c7c1-48b3-84fa-916a169904ba',
+    category: 'DRIED_FRUIT',
+    name: '奇异果',
+    unit: 'g',
+  },
+  {
+    _id: 'e74bbde5-a390-43ac-b69c-e8c1522af606',
+    category: 'FLOWER',
+    name: '茉莉花',
+    unit: 'g',
+  },
+  {
+    _id: '3ec390c0-5307-4aee-a82f-79efa43d1e28',
+    category: 'DRIED_FRUIT',
+    name: '话梅',
+    unit: 'g',
+  },
+  {
+    _id: 'b58597fe-b4ba-4b41-a57e-43eac4c11932',
+    category: 'DRIED_FRUIT',
+    name: '小青桔',
+    unit: '颗',
+  },
+  {
+    _id: '6f2122ad-7984-46b3-9fa8-846177159318',
+    category: 'FLOWER',
+    name: '墨红玫瑰',
+    unit: '朵',
+  },
+  {
+    _id: 'c6576a51-2fae-4d99-a47b-fd48ed06a9f8',
+    category: 'HEALTHCARE',
+    name: '黑枸杞',
+    unit: 'g',
+  },
+  {
+    _id: 'aac844f2-874e-40b1-abba-87ad21755c4b',
+    category: 'FLOWER',
+    name: '洛神花',
+    unit: '朵',
+  },
+  {
+    _id: 'feeb6771-f40a-4fc7-922e-1eb01044f4e4',
+    category: 'DRIED_FRUIT',
+    name: '山楂片',
+    unit: 'g',
+  },
+  {
+    _id: '4a514082-69e1-4470-a70b-47a0add48ea6',
+    category: 'DRIED_FRUIT',
+    name: '橙子干',
+    unit: 'g',
+  },
+  {
+    _id: 'd82bc958-0a3e-440d-9793-cb5573a45a75',
+    category: 'DRIED_FRUIT',
+    name: '西柚',
+    unit: 'g',
+  },
+  {
+    _id: 'fd980c30-08db-44e0-82b9-466ed45ee92a',
+    category: 'TEA',
+    name: '薄荷茶',
+    unit: 'g',
+  },
+  {
+    _id: '03f45a48-1dd1-46e0-b865-99b84f1b7943',
+    category: 'TEA',
+    name: '蓝莓果茶',
+    unit: 'g',
+  },
+  {
+    _id: 'a08d63d7-5925-4c7c-967d-c848153c50ec',
+    category: 'TEA',
+    name: '蜜桃果茶',
+    unit: 'g',
+  },
+  {
+    _id: '4e7c9f7a-8105-4027-8a02-988b48d7b6a5',
+    category: 'FLOWER',
+    name: '金边玫瑰',
+    unit: 'g',
+  },
+  {
+    _id: '0bd65715-7bc4-407b-b0b7-459a632e3b31',
+    category: 'DRIED_FRUIT',
+    name: '苹果片',
+    unit: 'g',
+  },
+  {
+    _id: '04ea1be7-e92c-48a0-b6b1-f0d9f3acf851',
+    category: 'DRIED_FRUIT',
+    name: '雪梨片',
+    unit: 'g',
+  },
+  {
+    _id: '9912312a-3d63-4a23-9bfd-6f7430008db1',
+    category: 'DRIED_FRUIT',
+    name: '金桔',
+    unit: 'g',
+  },
+  {
+    _id: '4360504a-aeff-403c-b185-cdf82ce17c5e',
+    category: 'CHINESE_MEDICINE',
+    name: '陈皮丝',
+    unit: 'g',
+  },
+  {
+    _id: '2637be64-4ad2-486b-8ec2-b3f229ea5c3b',
+    category: 'CHINESE_MEDICINE',
+    name: '老陈皮',
+    unit: '片',
+  },
+  {
+    _id: 'a64b6d15-e3a9-4ac0-8f61-ee9710abccd0',
+    category: 'DRIED_FRUIT',
+    name: '冻干青桔',
+    unit: 'g',
+  },
+  {
+    _id: '910e02c6-9b59-46b9-be47-4c3aac5b1aab',
+    category: 'FLOWER',
+    name: '金银花',
+    unit: 'g',
+  },
+  {
+    _id: '72c79256-7210-45c8-89dc-2b0e66814825',
+    category: 'CHINESE_MEDICINE',
+    name: '牛蒡根',
+    unit: '片',
+  },
+  {
+    _id: 'd772f938-0606-4fd9-8d8f-d7bf44026a8a',
+    category: 'FLOWER',
+    name: '胎菊',
+    unit: 'g',
+  },
+  {
+    _id: '8d5ed98a-a5e8-450f-9d3b-6c4ada8222a7',
+    category: 'FLOWER',
+    name: '桂花',
+    unit: 'g',
+  },
+  {
+    _id: '43398df2-c95a-4562-9d1d-97ca48e58801',
+    category: 'CHINESE_MEDICINE',
+    name: '决明子',
+    unit: 'g',
+  },
+  {
+    _id: '5a97f4df-6a39-475c-9bca-9330f3cd3028',
+    category: 'HEALTHCARE',
+    name: '枸杞',
+    unit: 'g',
+  },
+  {
+    _id: '2331f521-c0c8-4928-9166-870571235c27',
+    category: 'DRIED_FRUIT',
+    name: '五味子',
+    unit: 'g',
+  },
+  {
+    _id: '8ab9d5cb-50f8-4dfe-ab23-3514f41fd5b3',
+    category: 'CHINESE_MEDICINE',
+    name: '酸枣仁',
+    unit: 'g',
+  },
+  {
+    _id: '697327fe-20d6-42c9-a911-75fbc5bedcdf',
+    category: 'DRIED_FRUIT',
+    name: '桑葚',
+    unit: '颗',
+  },
+  {
+    _id: '8d76b1f3-e485-48bb-bfbe-8a173217047f',
+    category: 'FLOWER',
+    name: '金丝皇菊',
+    unit: '朵',
+  },
+  {
+    _id: '00839930-5090-49bc-b895-db7186a1584c',
+    category: 'FLOWER',
+    name: '藏红花',
+    unit: '根',
+  },
+  {
+    _id: '55e726ec-3bbd-47ad-8ff0-9ff0dd6ccf0a',
+    category: 'DRIED_FRUIT',
+    name: '桂圆',
+    unit: '颗',
+  },
+  {
+    _id: 'c9ab3ea9-0c30-4e5e-8e63-f2f17ac23db0',
+    category: 'HEALTHCARE',
+    name: '红枣',
+    unit: '颗',
+  },
+  {
+    _id: 'aa8f3787-06a4-4c64-93f7-b4621f0a8d47',
+    category: 'TEA',
+    name: '荷叶',
+    unit: 'g',
+  },
+  {
+    _id: '56f3ed31-9fae-40cf-9ba6-0f60b1594586',
+    category: 'CHINESE_MEDICINE',
+    name: '陈皮',
+    unit: 'g',
+  },
+  {
+    _id: '17046889-4549-4aae-a427-a7c92fb76eb6',
+    category: 'CHINESE_MEDICINE',
+    name: '蒲公英根',
+    unit: 'g',
+  },
+  {
+    _id: '5c4772a1-3df9-49ca-b1aa-e8dce975d893',
+    category: 'HEALTHCARE',
+    name: '赤小豆',
+    unit: 'g',
+  },
+  {
+    _id: 'fdc9cf2b-52a6-4f5c-81e1-ab467918f3b5',
+    category: 'CHINESE_MEDICINE',
+    name: '茯苓',
+    unit: '颗',
+  },
+  {
+    _id: '08e72b67-34df-4f69-939a-61ff06c75182',
+    category: 'HEALTHCARE',
+    name: '薏米',
+    unit: 'g',
+  },
+  {
+    _id: '7bc141a9-3a4d-4ef4-8103-970899d9dadf',
+    category: 'HEALTHCARE',
+    name: '芡实',
+    unit: 'g',
+  },
+  {
+    _id: 'f8f497e6-cffe-487d-bbfa-f020c008f481',
+    category: 'FLOWER',
+    name: '绿萝花',
+    unit: 'g',
+  },
+  {
+    _id: 'a7b9e558-e018-44e4-8347-624fe486204e',
+    category: 'TEA',
+    name: '绞股蓝',
+    unit: 'g',
+  },
+  {
+    _id: '6e9c3058-366d-4ad0-9dd5-d5856260b4ef',
+    category: 'CHINESE_MEDICINE',
+    name: '三七花',
+    unit: 'g',
+  },
+  {
+    _id: '7cda88a2-2c6b-40b4-9ae1-0eae9377c389',
+    category: 'HEALTHCARE',
+    name: '红枣片',
+    unit: '片',
+  },
+  {
+    _id: '53acaf20-32fa-46b0-8bd6-5a80d84382d1',
+    category: 'HEALTHCARE',
+    name: '生姜',
+    unit: 'g',
+  },
+  {
+    _id: '746d39a5-819a-40f0-a295-312856661303',
+    category: 'FLOWER',
+    name: '菊花',
+    unit: 'g',
+  },
+  {
+    _id: '71d542b5-cbfd-4be7-9d2f-098df98b8f3d',
+    category: 'FLOWER',
+    name: '玫瑰花',
+    unit: '朵',
+  },
+  {
+    _id: '6bb1031d-73cf-4c43-9ca9-3fc332d40ab2',
+    category: 'CHINESE_MEDICINE',
+    name: '罗汉果仁',
+    unit: 'g',
+  },
+  {
+    _id: '535d0de8-c9a8-479a-9528-d5b2beb2d0fb',
+    category: 'CHINESE_MEDICINE',
+    name: '麦冬',
+    unit: 'g',
+  },
+  {
+    _id: '1c7c4ebc-1f85-4bbb-82a8-e6376bba59e6',
+    category: 'CHINESE_MEDICINE',
+    name: '胖大海',
+    unit: 'g',
+  },
+  {
+    _id: '34fd113a-c2b1-46d0-ab30-583b893eaf6f',
+    category: 'FLOWER',
+    name: '金莲花',
+    unit: 'g',
+  },
+  {
+    _id: '4900e644-5706-42e3-b5e8-108ef8950c71',
+    category: 'CHINESE_MEDICINE',
+    name: '甘草片',
+    unit: 'g',
+  },
+  {
+    _id: '96214ad9-7ffc-429b-9c4a-408e46d77d2a',
+    category: 'TEA',
+    name: '绿茶',
+    unit: 'g',
+  },
+  {
+    _id: 'a1499f53-37c9-4961-aedc-0418035638c3',
+    category: 'TEA',
+    name: '薄荷叶',
+    unit: 'g',
+  },
+  {
+    _id: 'c1d4269f-3264-4b46-b7b4-d91509ae0444',
+    category: 'TEA',
+    name: '淡竹叶',
+    unit: 'g',
+  },
+  {
+    _id: '321b0896-ca92-4a21-9e54-ac4ffdc717c0',
+    category: 'HEALTHCARE',
+    name: '刺梨',
+    unit: '颗',
+  },
+  {
+    _id: 'b4258afb-fb55-4417-996f-db1e59d0db19',
+    category: 'DRIED_FRUIT',
+    name: '无花果干',
+    unit: 'g',
+  },
+  {
+    _id: 'ebd2ea6e-7ddc-4db4-b801-bc615cc92004',
+    category: 'DRIED_FRUIT',
+    name: '柠檬片',
+    unit: 'g',
+  },
+  {
+    _id: '73473299-401c-41ec-aa2c-e08b39da60bf',
+    category: 'DRIED_FRUIT',
+    name: '乌梅',
+    unit: '颗',
+  },
+  {
+    _id: '3db57b45-b8a1-42de-8352-79966433f470',
+    category: 'CHINESE_MEDICINE',
+    name: '白芍',
+    unit: 'g',
+  },
+  {
+    _id: '16794c9c-d18a-4b8c-9962-2116d2ac4b35',
+    category: 'CHINESE_MEDICINE',
+    name: '白术',
+    unit: 'g',
+  },
+  {
+    _id: '261d8bcb-ee96-4d5f-8a84-255229a2ae59',
+    category: 'CHINESE_MEDICINE',
+    name: '白茯苓',
+    unit: 'g',
+  },
+  {
+    _id: '2a9dc42d-bbf4-4c42-a234-d625c1fd32c0',
+    category: 'CHINESE_MEDICINE',
+    name: '西镇甘草',
+    unit: 'g',
+  },
+  {
+    _id: '16274965-ee6d-40a8-aa4f-c640bc91837c',
+    category: 'FLOWER',
+    name: '铁皮石斛花',
+    unit: '朵',
+  },
+  {
+    _id: 'fc8ac4a5-b0df-454f-8223-305ed5132e24',
+    category: 'CHINESE_MEDICINE',
+    name: '党参',
+    unit: '小段',
+  },
+  {
+    _id: 'efcac287-1ed2-47b8-a515-711d47aec840',
+    category: 'CHINESE_MEDICINE',
+    name: '黄芪',
+    unit: '片',
+  },
+  {
+    _id: '0a27a70d-5108-40b5-a4e1-a422af500f64',
+    category: 'CHINESE_MEDICINE',
+    name: '当归',
+    unit: '片',
+  },
+  {
+    _id: '0be2db32-0e6a-47cf-930b-a87b2e021cc7',
+    category: 'CHINESE_MEDICINE',
+    name: '山茱萸',
+    unit: 'g',
+  },
+  {
+    _id: '7711e665-c367-4ab4-be6d-130731b65a4f',
+    category: 'CHINESE_MEDICINE',
+    name: '黄精',
+    unit: 'g',
+  },
+  {
+    _id: '1c6e0a57-2681-419a-93e7-91e62d85266c',
+    category: 'CHINESE_MEDICINE',
+    name: '玉竹',
+    unit: 'g',
+  },
+  {
+    _id: 'a9bc56a0-9e56-45d8-9eb7-754533be225a',
+    category: 'CHINESE_MEDICINE',
+    name: '山药',
+    unit: '片',
+  },
+  {
+    _id: '4458fa73-6092-4c88-9473-d188185b0745',
+    category: 'CHINESE_MEDICINE',
+    name: '莲子',
+    unit: 'g',
+  },
+  {
+    _id: '875d47ed-87f2-4489-92dc-bf668bd19f7d',
+    category: 'CHINESE_MEDICINE',
+    name: '西洋参',
+    unit: 'g',
+  },
+  {
+    _id: 'dc2782e8-2994-4ee4-99e1-b6c9879d1e0d',
+    category: 'HEALTHCARE',
+    name: '拉丝雪燕',
+    unit: '颗',
+  },
+  {
+    _id: '78ab08cd-8c0d-4185-adb0-eab4a95fcbae',
+    category: 'HEALTHCARE',
+    name: '珍珠桃胶',
+    unit: 'g',
+  },
+  {
+    _id: '5dfba6c3-62ac-4740-8f05-3f9046a446ec',
+    category: 'HEALTHCARE',
+    name: '高山雪莲子',
+    unit: '颗',
+  },
+  {
+    _id: '75d8636f-3e56-4ecd-8f75-057d76c8a6b7',
+    category: 'HEALTHCARE',
+    name: '椴木雪耳',
+    unit: '朵',
+  },
+  {
+    _id: '67c446fe-fd05-408a-982c-c272b8bfc913',
+    category: 'HEALTHCARE',
+    name: '白杏仁露',
+    unit: 'g',
+  },
+  {
+    _id: '6fc5c836-b183-4e9d-a5ca-245716fa0f53',
+    category: 'HEALTHCARE',
+    name: '百合',
+    unit: 'g',
+  },
+  {
+    _id: '2efce30f-1a70-42cb-bd7b-916c2248b94b',
+    category: 'HEALTHCARE',
+    name: '南杏仁',
+    unit: '粒',
+  },
+  {
+    _id: 'd051a40b-fab5-4f08-98dc-8717f5cba455',
+    category: 'HEALTHCARE',
+    name: '海底椰',
+    unit: 'g',
+  },
+  {
+    _id: '6d9a333d-019e-4555-a416-b36cd06fa092',
+    category: 'HEALTHCARE',
+    name: '茅根',
+    unit: 'g',
+  },
+  {
+    _id: 'eccbd657-aa31-4cf5-946a-0020c862d50e',
+    category: 'HEALTHCARE',
+    name: '甘蔗根',
+    unit: 'g',
+  },
+  {
+    _id: '0213e1e6-9d57-4042-876e-18d9631a4663',
+    category: 'HEALTHCARE',
+    name: '蜜枣',
+    unit: '颗',
+  },
+  {
+    _id: 'e779ad5d-9c63-4418-8213-fe09c1cda439',
+    category: 'CHINESE_MEDICINE',
+    name: '红参',
+    unit: 'g',
+  },
+  {
+    _id: 'c2d8565a-185d-48e6-af4f-e0c2d602d771',
+    category: 'SUGAR',
+    name: '黑糖',
+    unit: '块',
+  },
+  {
+    _id: '35d6d31d-62c8-45af-bfdd-0fecfe63f954',
+    category: 'SUGAR',
+    name: '果糖',
+    unit: 'g',
+  },
+  {
+    _id: 'a97fd400-5f0c-4f3e-a401-9d30eeddbac1',
+    category: 'SUGAR',
+    name: '黄冰糖',
+    unit: 'g',
+  },
+  {
+    _id: '54f54a7f6382125b00af2ddd39d8a55c',
+    _openid: '229873cfbb904c698a932a353b2d7de8',
+    category: 'DRIED_FRUIT',
+    created_at: 1669468763402,
+    name: 'aabb',
+    price_set: {
+      agency_price: null,
+      recommended_retail_price: null,
+    },
+    unit: 'g',
+    updated_at: 1669468806334,
+  },
+]
+
+export const TeaBagCategoryMap = new Map([
+  ['果饮', 'FRUIT_DRINK'],
+  ['养生花茶', 'SCENTED_TEA'],
+  ['养生类', 'HEALTH_PRESERVATION'],
+  ['汤包', 'SOUP_STOCK'],
+  ['调理类', 'RECUPERATE'],
+  ['炖煮类', 'STEW'],
+  ['滋补炖煮类', 'NOURISHING_STEW'],
+  ['豆类', 'SOYBEAN_MILK'],
+])
+
+export const SuitCrowdsMap = new Map([
+  ['父母养生', 'PARENT'],
+  ['孩子养生', 'CHILDREN'],
+  ['男士养生', 'MALE'],
+  ['少女养生', 'FEMALE'],
+  ['熬夜养生', 'STAY_UP_LATE'],
+  ['美白养颜', 'WHITENING_AND_BEAUTIFYING'],
+  ['女生姨妈', 'MENSES'],
+  ['办公室', 'OFFICE'],
+])
+
+const res = data.map((item) => {
+  const formula = item.formula_des.map((value) => {
+    const match = value.match(/^(\D+)([\d\.\-]+)(\D*)$/)
+    const [, rawName, quantity, unit] = match
+    const name = rawName.trim()
+    const material = materials.find((m) => {
+      return m.name.localeCompare(name)
+    })
+    if (!material) {
+      console.log(rawName, name)
+      return null
+    }
+    return {
+      _id: material._id,
+      // name: name,
+      quantity,
+    }
+  })
+  const effects = item.effects.map((item) => item.replace('作用：', '').trim())
+  const category = TeaBagCategoryMap.get(item.category)
+  const suit_crowds = item.suit_crowds.map((item) => SuitCrowdsMap.get(item))
+
+  const price_set = {
+    gradient_wholesale_price: [{ start: 0, price: Number(item['0-50']) }],
+    wholesale_price: Number(item['50-500']),
+    agency_price: Number(item.agency_price),
+    recommended_retail_price: Number(item.recommended_retail_price),
+  }
+
+  switch (category) {
+    case 'FRUIT_DRINK':
+      price_set.gradient_wholesale_price.push({ start: 500, price: 2.4 })
+      break
+    case 'SCENTED_TEA':
+      price_set.gradient_wholesale_price.push({ start: 500, price: 1.98 })
+      break
+    case 'HEALTH_PRESERVATION':
+      price_set.gradient_wholesale_price.push({ start: 500, price: 3 })
+      break
+    case 'RECUPERATE':
+      price_set.gradient_wholesale_price.push({ start: 500, price: 4.5 })
+      break
+    case 'STEW':
+      price_set.gradient_wholesale_price.push({ start: 500, price: 5.4 })
+      break
+    case 'NOURISHING_STEW':
+      price_set.gradient_wholesale_price.push({ start: 500, price: 5.4 })
+      break
+  }
+
+  const a = item.packaging.match(/^([\D]+)([\d\.]+)\*([\d\.]+)(.*)$/)
+  const [, type, width, height, unit] = a
+  const typeMap = {
+    透明自封袋: 'packaging-1',
+    白磨砂自立袋: 'packaging-2',
+  }
+  const packaging = {
+    type: typeMap[type],
+    name: type,
+    size: {
+      width,
+      height,
+      unit: 'cm',
+    },
+  }
+
+  const index = item.no.replace(/\d-/, '')
+
+  return {
+    _openid: '229873cfbb904c698a932a353b2d7de8',
+    name: item.name,
+    no: `${category.toLowerCase().replace('_', '-')}-${index}`,
+    category,
+    formula,
+    effects,
+    suit_crowds,
+    price_set,
+    created_at: '2022-11-27T15:01:13.679Z',
+    updated_at: '2022-11-27T15:01:13.679Z',
+  }
+})
+console.log(JSON.stringify(res))

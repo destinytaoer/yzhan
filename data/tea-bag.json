@@ -1,0 +1,2216 @@
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "凤梨百香果",
+  "no": "fruit-drink-1",
+  "category": "FRUIT_DRINK",
+  "formula": [
+    {
+      "_id": "3ede4296-7436-48e4-a794-fc2014a19bbe",
+      "quantity": "7"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "18"
+    }
+  ],
+  "effects": [
+    "消除水肿",
+    "生津止渴",
+    "促进消化系统",
+    "补充维生素"
+  ],
+  "suit_crowds": [
+    "CHILDREN"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 3
+      },
+      {
+        "start": 500,
+        "price": 2.4
+      }
+    ],
+    "wholesale_price": 3.5,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "金桔百香果",
+  "no": "fruit-drink-2",
+  "category": "FRUIT_DRINK",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "6"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "3"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "20"
+    }
+  ],
+  "effects": [
+    "开胃生津",
+    "润喉止咳",
+    "健脾养胃",
+    "补充维生素"
+  ],
+  "suit_crowds": [
+    "CHILDREN"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 3
+      },
+      {
+        "start": 500,
+        "price": 2.4
+      }
+    ],
+    "wholesale_price": 3.5,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "木瓜火龙果",
+  "no": "fruit-drink-3",
+  "category": "FRUIT_DRINK",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "8"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "8"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "18"
+    }
+  ],
+  "effects": [
+    "美容养颜",
+    "延缓衰老",
+    "保护血管",
+    "润肠通便",
+    "补充维生素"
+  ],
+  "suit_crowds": [
+    "PARENT"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 3
+      },
+      {
+        "start": 500,
+        "price": 2.4
+      }
+    ],
+    "wholesale_price": 3.5,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "茉香奇异果",
+  "no": "fruit-drink-4",
+  "category": "FRUIT_DRINK",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "18"
+    }
+  ],
+  "effects": [
+    "解郁散结",
+    "提神醒脑",
+    "补充体力",
+    "助消化",
+    "补充维生素"
+  ],
+  "suit_crowds": [
+    "CHILDREN"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 3
+      },
+      {
+        "start": 500,
+        "price": 2.4
+      }
+    ],
+    "wholesale_price": 3.5,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "夏日咸柠茶",
+  "no": "fruit-drink-5",
+  "category": "FRUIT_DRINK",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "4"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "20"
+    }
+  ],
+  "effects": [
+    "生津止渴",
+    "促进消化系统",
+    "健脾消暑",
+    "补充维生素"
+  ],
+  "suit_crowds": [
+    "CHILDREN"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 3
+      },
+      {
+        "start": 500,
+        "price": 2.4
+      }
+    ],
+    "wholesale_price": 3.5,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "青桔柠檬茶",
+  "no": "fruit-drink-6",
+  "category": "FRUIT_DRINK",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "3.5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1-2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2.5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "23"
+    }
+  ],
+  "effects": [
+    "美白淡斑",
+    "清热养颜",
+    "防辐射抗氧化",
+    "补充维生素"
+  ],
+  "suit_crowds": [
+    "WHITENING_AND_BEAUTIFYING"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 3
+      },
+      {
+        "start": 500,
+        "price": 2.4
+      }
+    ],
+    "wholesale_price": 3.5,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "洛神山楂饮",
+  "no": "fruit-drink-7",
+  "category": "FRUIT_DRINK",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "6"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "6"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "20"
+    }
+  ],
+  "effects": [
+    "纤体去油",
+    "提高代谢功能",
+    "健脾养胃",
+    "抗氧化",
+    "补充维生素"
+  ],
+  "suit_crowds": [
+    "CHILDREN"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 3
+      },
+      {
+        "start": 500,
+        "price": 2.4
+      }
+    ],
+    "wholesale_price": 3.5,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "西柚薄荷茶",
+  "no": "fruit-drink-8",
+  "category": "FRUIT_DRINK",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "3"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2.5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "18"
+    }
+  ],
+  "effects": [
+    "纤体瘦身",
+    "提神醒脑",
+    "缓解疲劳",
+    "缓解喉咙不适",
+    "补充维生素"
+  ],
+  "suit_crowds": [
+    "CHILDREN"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 3
+      },
+      {
+        "start": 500,
+        "price": 2.4
+      }
+    ],
+    "wholesale_price": 3.5,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "蓝莓蜜桃果茶",
+  "no": "fruit-drink-9",
+  "category": "FRUIT_DRINK",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "4"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "20"
+    }
+  ],
+  "effects": [
+    "保护视力",
+    "提高代谢功能",
+    "健脾养胃",
+    "防辐射抗氧化",
+    "补充维生素"
+  ],
+  "suit_crowds": [
+    "CHILDREN"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 3
+      },
+      {
+        "start": 500,
+        "price": 2.4
+      }
+    ],
+    "wholesale_price": 3.5,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "苹果雪梨金桔茶",
+  "no": "fruit-drink-10",
+  "category": "FRUIT_DRINK",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "10"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "10"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "18"
+    }
+  ],
+  "effects": [
+    "清热生津",
+    "化痰润燥",
+    "开胃健脾",
+    "美容养颜",
+    "补充维生素"
+  ],
+  "suit_crowds": [
+    "CHILDREN",
+    "WHITENING_AND_BEAUTIFYING"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 3
+      },
+      {
+        "start": 500,
+        "price": 2.4
+      }
+    ],
+    "wholesale_price": 3.5,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "健脾养胃茶",
+  "no": "fruit-drink-11",
+  "category": "FRUIT_DRINK",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "8"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1"
+    }
+  ],
+  "effects": [
+    "调理虚不受补",
+    "健脾和胃",
+    "养阴安神",
+    "湿热体质",
+    "上热下寒",
+    "提高免疫"
+  ],
+  "suit_crowds": [
+    "MALE"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 3
+      },
+      {
+        "start": 500,
+        "price": 2.4
+      }
+    ],
+    "wholesale_price": 3.5,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "西柚青桔百香果茶",
+  "no": "fruit-drink-12",
+  "category": "FRUIT_DRINK",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1.5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "4"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "18"
+    }
+  ],
+  "effects": [
+    "缓解上火",
+    "疏通脉络",
+    "美容养颜",
+    "提高代谢",
+    "补充维生素"
+  ],
+  "suit_crowds": [
+    "CHILDREN"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 3
+      },
+      {
+        "start": 500,
+        "price": 2.4
+      }
+    ],
+    "wholesale_price": 3.5,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "青桔柠檬百香果茶",
+  "no": "fruit-drink-13",
+  "category": "FRUIT_DRINK",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1.5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "4"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "18"
+    }
+  ],
+  "effects": [
+    "美白抗氧",
+    "美容养颜",
+    "提高代谢",
+    "补充维生素"
+  ],
+  "suit_crowds": [
+    "WHITENING_AND_BEAUTIFYING"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 3
+      },
+      {
+        "start": 500,
+        "price": 2.4
+      }
+    ],
+    "wholesale_price": 3.5,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "护肝明目茶",
+  "no": "scented-tea-1",
+  "category": "SCENTED_TEA",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2-3"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "10"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "4"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "10"
+    }
+  ],
+  "effects": [
+    "清热降火",
+    "养肝护肝",
+    "降心火解毒",
+    "适合内热压力大人群"
+  ],
+  "suit_crowds": [
+    "STAY_UP_LATE",
+    "MALE"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 2
+      },
+      {
+        "start": 500,
+        "price": 1.98
+      }
+    ],
+    "wholesale_price": 3.3,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "宁心安神茶",
+  "no": "scented-tea-2",
+  "category": "SCENTED_TEA",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "8"
+    }
+  ],
+  "effects": [
+    "调节结节增生",
+    "控油祛痘",
+    "排毒消炎",
+    "清新口气",
+    "润肠通便"
+  ],
+  "suit_crowds": [
+    "PARENT"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 2
+      },
+      {
+        "start": 500,
+        "price": 1.98
+      }
+    ],
+    "wholesale_price": 3.3,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "白里透红茶",
+  "no": "scented-tea-3",
+  "category": "SCENTED_TEA",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2-3"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "8-10"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1-2"
+    }
+  ],
+  "effects": [
+    "祛黄淡斑",
+    "延缓衰老",
+    "舒肝解郁",
+    "提亮肤色",
+    "抗氧化"
+  ],
+  "suit_crowds": [
+    "FEMALE"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 2
+      },
+      {
+        "start": 500,
+        "price": 1.98
+      }
+    ],
+    "wholesale_price": 3.3,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "攻瑰桑葚茶",
+  "no": "scented-tea-4",
+  "category": "SCENTED_TEA",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1-2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "8"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    }
+  ],
+  "effects": [
+    "补肾护肝",
+    "益气养神",
+    "保护子宫卵",
+    "增强免疫力",
+    "疏肝解郁"
+  ],
+  "suit_crowds": [
+    "MENSES",
+    "STAY_UP_LATE",
+    "FEMALE",
+    "PARENT"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 2
+      },
+      {
+        "start": 500,
+        "price": 1.98
+      }
+    ],
+    "wholesale_price": 3.3,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "山楂荷叶茶",
+  "no": "scented-tea-5",
+  "category": "SCENTED_TEA",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "4"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "6"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    }
+  ],
+  "effects": [
+    "食欲不振",
+    "理气健胃",
+    "出虚汗",
+    "提高消化系统功能",
+    "预防便秘",
+    "老人小孩都宜"
+  ],
+  "suit_crowds": [
+    "PARENT",
+    "CHILDREN"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 2
+      },
+      {
+        "start": 500,
+        "price": 1.98
+      }
+    ],
+    "wholesale_price": 3.3,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "润肠排毒茶",
+  "no": "scented-tea-6",
+  "category": "SCENTED_TEA",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "10"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1-2"
+    }
+  ],
+  "effects": [
+    "减脂瘦身",
+    "纤体刮油",
+    "清理肠道垃圾",
+    "隔断脂肪吸收",
+    "减轻内脏脂肪"
+  ],
+  "suit_crowds": [
+    "MALE"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 2
+      },
+      {
+        "start": 500,
+        "price": 1.98
+      }
+    ],
+    "wholesale_price": 3.3,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "祛湿减肥茶",
+  "no": "scented-tea-7",
+  "category": "SCENTED_TEA",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "8"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "8"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "6"
+    }
+  ],
+  "effects": [
+    "湿痰过多导致的肥胖",
+    "调节内分泌",
+    "调节脾胃不和",
+    "排湿去水肿"
+  ],
+  "suit_crowds": [
+    "MALE"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 2
+      },
+      {
+        "start": 500,
+        "price": 1.98
+      }
+    ],
+    "wholesale_price": 3.3,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "降压降血茶",
+  "no": "scented-tea-8",
+  "category": "SCENTED_TEA",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "3"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5-8"
+    }
+  ],
+  "effects": [
+    "适合血糖血压血脂尿酸过高人群",
+    "软化血管",
+    "清理血管垃圾",
+    "降低血液粘稠度"
+  ],
+  "suit_crowds": [
+    "PARENT"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 2
+      },
+      {
+        "start": 500,
+        "price": 1.98
+      }
+    ],
+    "wholesale_price": 3.3,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "经期必备茶",
+  "no": "scented-tea-9",
+  "category": "SCENTED_TEA",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "6"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "10"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1"
+    }
+  ],
+  "effects": [
+    "暖宫驱寒",
+    "缓解经期不适",
+    "改善不规律量少",
+    "化瘀排毒"
+  ],
+  "suit_crowds": [
+    "MENSES",
+    "FEMALE"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 2
+      },
+      {
+        "start": 500,
+        "price": 1.98
+      }
+    ],
+    "wholesale_price": 3.3,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "黑糖姜茶",
+  "no": "scented-tea-10",
+  "category": "SCENTED_TEA",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "4"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "4"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "4"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1"
+    }
+  ],
+  "effects": [
+    "暖宫驱寒",
+    "缓解经期不适"
+  ],
+  "suit_crowds": [
+    "MENSES",
+    "FEMALE"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 2
+      },
+      {
+        "start": 500,
+        "price": 1.98
+      }
+    ],
+    "wholesale_price": 3.3,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "清嗓润喉茶",
+  "no": "scented-tea-11",
+  "category": "SCENTED_TEA",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "8"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "12"
+    }
+  ],
+  "effects": [
+    "护嗓润喉",
+    "慢性咽炎",
+    "止咳化痰",
+    "消炎解毒",
+    "喉咙"
+  ],
+  "suit_crowds": [
+    "MALE"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 2
+      },
+      {
+        "start": 500,
+        "price": 1.98
+      }
+    ],
+    "wholesale_price": 3.3,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "金银花薄荷茶",
+  "no": "scented-tea-12",
+  "category": "SCENTED_TEA",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "3"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "4-5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1"
+    }
+  ],
+  "effects": [
+    "补气养心",
+    "滋阴降火",
+    "缓解疲劳",
+    "醒神开郁",
+    "宁神舒压"
+  ],
+  "suit_crowds": [
+    "OFFICE"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 2
+      },
+      {
+        "start": 500,
+        "price": 1.98
+      }
+    ],
+    "wholesale_price": 3.3,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "美白早c茶",
+  "no": "scented-tea-13",
+  "category": "SCENTED_TEA",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "3-5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "4"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "3"
+    }
+  ],
+  "effects": [
+    "美白亮肤",
+    "消除自由基",
+    "减少黑色素沉淀",
+    "提高代谢功能"
+  ],
+  "suit_crowds": [
+    "FEMALE",
+    "WHITENING_AND_BEAUTIFYING"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 1.8
+      },
+      {
+        "start": 500,
+        "price": 1.98
+      }
+    ],
+    "wholesale_price": 3.3,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "素颜晚A茶",
+  "no": "scented-tea-14",
+  "category": "SCENTED_TEA",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "3"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "8"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "6"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "10"
+    }
+  ],
+  "effects": [
+    "抗衰抗糖化",
+    "消除自由基",
+    "疏肝解郁",
+    "宁心安神助睡眠"
+  ],
+  "suit_crowds": [
+    "FEMALE",
+    "WHITENING_AND_BEAUTIFYING"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 1.8
+      },
+      {
+        "start": 500,
+        "price": 1.98
+      }
+    ],
+    "wholesale_price": 3.3,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "乌梅桑葚饮",
+  "no": "scented-tea-15",
+  "category": "SCENTED_TEA",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "10"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "3"
+    }
+  ],
+  "effects": [
+    "改善上热下寒",
+    "虚不受补",
+    "通三焦",
+    "乌发益肾",
+    "化痰燥湿"
+  ],
+  "suit_crowds": [
+    "FEMALE"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 1.8
+      },
+      {
+        "start": 500,
+        "price": 1.98
+      }
+    ],
+    "wholesale_price": 3.3,
+    "agency_price": 3.5,
+    "recommended_retail_price": 5.8
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "淡斑三白汤",
+  "no": "health-preservation-1",
+  "category": "HEALTH_PRESERVATION",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "6"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "6"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "10"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    }
+  ],
+  "effects": [
+    "美白淡斑",
+    "补气养血",
+    "滋养肌肤",
+    "除湿利水",
+    "调经活血"
+  ],
+  "suit_crowds": [
+    "FEMALE",
+    "WHITENING_AND_BEAUTIFYING"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 3
+      },
+      {
+        "start": 500,
+        "price": 3
+      }
+    ],
+    "wholesale_price": 4,
+    "agency_price": 4.3,
+    "recommended_retail_price": 7.3
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "抗糖抗衰茶",
+  "no": "health-preservation-2",
+  "category": "HEALTH_PRESERVATION",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2.5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1-2"
+    }
+  ],
+  "effects": [
+    "抗糖抗衰",
+    "滋养肝肾",
+    "益血乌发",
+    "润肠通便",
+    "明目安神",
+    "清热消肿"
+  ],
+  "suit_crowds": [
+    "FEMALE",
+    "WHITENING_AND_BEAUTIFYING"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 3
+      },
+      {
+        "start": 500,
+        "price": 3
+      }
+    ],
+    "wholesale_price": 4,
+    "agency_price": 4.3,
+    "recommended_retail_price": 7.3
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "女神气血茶",
+  "no": "health-preservation-3",
+  "category": "HEALTH_PRESERVATION",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "10"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "8"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "8-10"
+    }
+  ],
+  "effects": [
+    "补气养血",
+    "调经暖宫",
+    "手脚冰凉",
+    "面色蜡黄",
+    "头晕无力"
+  ],
+  "suit_crowds": [
+    "MENSES"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 3
+      },
+      {
+        "start": 500,
+        "price": 3
+      }
+    ],
+    "wholesale_price": 4,
+    "agency_price": 4.3,
+    "recommended_retail_price": 7.3
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "六宝补肾茶",
+  "no": "health-preservation-4",
+  "category": "HEALTH_PRESERVATION",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "4"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "3"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "6"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "4"
+    }
+  ],
+  "effects": [
+    "补肾固精",
+    "缓解疲劳",
+    "壮阳益气",
+    "保护肝脏",
+    "清肝明目",
+    "养血安神"
+  ],
+  "suit_crowds": [
+    "STAY_UP_LATE",
+    "MALE"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 3
+      },
+      {
+        "start": 500,
+        "price": 3
+      }
+    ],
+    "wholesale_price": 4,
+    "agency_price": 4.3,
+    "recommended_retail_price": 7.3
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "健脾四神汤",
+  "no": "recuperate-1",
+  "category": "RECUPERATE",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "9"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "9"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "9"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "9"
+    }
+  ],
+  "effects": [
+    "调理虚不受补",
+    "健脾和胃",
+    "养阴安神",
+    "湿热体质",
+    "上热下寒",
+    "提高免疫"
+  ],
+  "suit_crowds": [
+    "MALE",
+    "FEMALE"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 4.5
+      },
+      {
+        "start": 500,
+        "price": 4.5
+      }
+    ],
+    "wholesale_price": 5.3,
+    "agency_price": 5.5,
+    "recommended_retail_price": 9
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "古方酸梅汤",
+  "no": "recuperate-2",
+  "category": "RECUPERATE",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "4"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "10"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "10"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "7"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "3"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "40"
+    }
+  ],
+  "effects": [
+    "消暑解渴",
+    "生津开胃",
+    "除烦安神",
+    "美容养颜",
+    "保肝护肝"
+  ],
+  "suit_crowds": [],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 4.5
+      },
+      {
+        "start": 500,
+        "price": 4.5
+      }
+    ],
+    "wholesale_price": 5.3,
+    "agency_price": 5.5,
+    "recommended_retail_price": 9
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "补气保心茶",
+  "no": "recuperate-3",
+  "category": "RECUPERATE",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "3"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "10"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "4"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    }
+  ],
+  "effects": [
+    "养阴生津",
+    "补血安神",
+    "理气健脾",
+    "润肺保心",
+    "祛湿美白"
+  ],
+  "suit_crowds": [
+    "MALE",
+    "FEMALE"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 4.5
+      },
+      {
+        "start": 500,
+        "price": 4.5
+      }
+    ],
+    "wholesale_price": 5.3,
+    "agency_price": 5.5,
+    "recommended_retail_price": 9
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "养心生脉饮",
+  "no": "recuperate-4",
+  "category": "RECUPERATE",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "8"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "8"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "4"
+    }
+  ],
+  "effects": [
+    "益气复脉",
+    "养阴生津",
+    "清心除烦",
+    "增强心肌功能",
+    "缓解脾胃虚弱肾气不足"
+  ],
+  "suit_crowds": [
+    "PARENT"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 4.5
+      },
+      {
+        "start": 500,
+        "price": 4.5
+      }
+    ],
+    "wholesale_price": 5.3,
+    "agency_price": 5.5,
+    "recommended_retail_price": 9
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "桃胶雪燕羹",
+  "no": "stew-1",
+  "category": "STEW",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "3"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "12"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "12"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "4"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    }
+  ],
+  "effects": [
+    "补充胶原蛋白",
+    "清血降脂",
+    "抗皱嫩肤",
+    "滋阴润肺",
+    "增强免疫力"
+  ],
+  "suit_crowds": [
+    "FEMALE",
+    "WHITENING_AND_BEAUTIFYING"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 5.4
+      },
+      {
+        "start": 500,
+        "price": 5.4
+      }
+    ],
+    "wholesale_price": 8.3,
+    "agency_price": 8.8,
+    "recommended_retail_price": 12
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "五白杏仁露",
+  "no": "stew-2",
+  "category": "STEW",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2-3"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "10-12"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "6-8"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "2"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "3-5"
+    }
+  ],
+  "effects": [
+    "内调美白王者",
+    "滋阴润肺",
+    "养肤养颜",
+    "宁心安神",
+    "健脾补气"
+  ],
+  "suit_crowds": [
+    "WHITENING_AND_BEAUTIFYING"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 5.4
+      },
+      {
+        "start": 500,
+        "price": 5.4
+      }
+    ],
+    "wholesale_price": 8.3,
+    "agency_price": 8.8,
+    "recommended_retail_price": 12
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "雪梨海底椰",
+  "no": "stew-3",
+  "category": "STEW",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "10"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "10"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "8"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "10"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "3"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "24"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "15"
+    }
+  ],
+  "effects": [
+    "清热下火",
+    "清肺润嗓",
+    "止咳化痰",
+    "缓解换季干燥",
+    "内火旺流鼻血"
+  ],
+  "suit_crowds": [
+    "PARENT"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 5.4
+      },
+      {
+        "start": 500,
+        "price": 5.4
+      }
+    ],
+    "wholesale_price": 8.3,
+    "agency_price": 8.8,
+    "recommended_retail_price": 12
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "红参补元气血茶",
+  "no": "nourishing-stew-1",
+  "category": "NOURISHING_STEW",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "4"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "18"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "5"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "10"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "1"
+    }
+  ],
+  "effects": [
+    "延缓衰老",
+    "面色内调王者",
+    "畏冷阳虚",
+    "补气振阳",
+    "补脾安神"
+  ],
+  "suit_crowds": [
+    "FEMALE",
+    "WHITENING_AND_BEAUTIFYING"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 5.4
+      },
+      {
+        "start": 500,
+        "price": 5.4
+      }
+    ],
+    "wholesale_price": 9.5,
+    "agency_price": 10,
+    "recommended_retail_price": 13
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}
+{
+  "_openid": "229873cfbb904c698a932a353b2d7de8",
+  "name": "石斛熬夜元气茶",
+  "no": "nourishing-stew-2",
+  "category": "NOURISHING_STEW",
+  "formula": [
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "3"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "3"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "3"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "8"
+    },
+    {
+      "_id": "a74b8f88-bfe4-44c2-838c-16aecf6eb9ed",
+      "quantity": "4"
+    }
+  ],
+  "effects": [
+    "滋阴清热",
+    "润肺清心",
+    "养肝护肝",
+    "益胃生津",
+    "提高免疫",
+    "抗疲劳",
+    "调节三高"
+  ],
+  "suit_crowds": [
+    "STAY_UP_LATE",
+    "PARENT"
+  ],
+  "price_set": {
+    "gradient_wholesale_price": [
+      {
+        "start": 0,
+        "price": 12
+      },
+      {
+        "start": 500,
+        "price": 5.4
+      }
+    ],
+    "wholesale_price": 13,
+    "agency_price": 13.5,
+    "recommended_retail_price": 16
+  },
+  "created_at": "2022-11-27T15:01:13.679Z",
+  "updated_at": "2022-11-27T15:01:13.679Z"
+}

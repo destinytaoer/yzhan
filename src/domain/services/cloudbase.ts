@@ -1,8 +1,9 @@
 import cloudbase from '@cloudbase/js-sdk'
+import { CloudbaseEnvId, CloudbaseRegion } from '@/shared/utils/config'
 
 export const app = cloudbase.init({
-  env: 'yzhan-admin-3gt4iizsb0c99971',
-  region: 'ap-shanghai',
+  env: CloudbaseEnvId,
+  region: CloudbaseRegion,
 })
 
 // 鉴权

@@ -8,19 +8,19 @@ const collection = db.collection('material')
 export default class MaterialService {
   static collection = collection
 
-  static list() {
-    return request.get<Response<Material>>(materialApi.list)
+  static list(): Promise<Response<Material>> {
+    return request.get(materialApi.list)
   }
 
   static create(data: Partial<Material>) {
-    return collection.add(data)
+    return request.post(materialApi.create, data)
   }
 
   static update(id: string, data: Partial<Material>) {
-    return collection.doc(id).update(data)
+    return request.post(materialApi.update, { id, data })
   }
 
   static remove(id: string) {
-    return collection.doc(id).remove()
+    return request.post(materialApi.remove, { id })
   }
 }

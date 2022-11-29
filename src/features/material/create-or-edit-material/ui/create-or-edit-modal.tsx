@@ -34,19 +34,11 @@ const CreateOrEditMaterialModal: FC<ICreateOrEditMaterialModalProps> = ({ modalR
 
   const onFinish = async (values: Partial<Material>) => {
     console.log(values)
-    const now = new Date().toISOString()
 
     if (data) {
-      update(data._id, {
-        ...values,
-        updated_at: now,
-      })
+      update(data._id, values)
     } else {
-      create({
-        ...values,
-        created_at: now,
-        updated_at: now,
-      })
+      create(values)
     }
   }
 

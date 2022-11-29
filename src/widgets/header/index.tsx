@@ -32,7 +32,7 @@ const items: MenuProps['items'] = [
 
 const GlobalHeader: FC = () => {
   return (
-    <Header className='flex justify-between items-center px-10 h-20'>
+    <Header className='flex justify-between items-center px-10 h-16'>
       <Link to={'/'}>
         <Logo />
       </Link>

@@ -12,9 +12,10 @@ const db = app.database()
 exports.main = async function (event) {
   const data = JSON.parse(event.body)
 
+  const now = db.serverDate()
   return db.collection('material').add({
     ...data,
-    created_at: db.serverDate(),
-    updated_at: db.serverDate(),
+    created_at: now,
+    updated_at: now,
   })
 }

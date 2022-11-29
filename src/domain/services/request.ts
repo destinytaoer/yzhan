@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { auth } from './cloudbase'
 
-const baseURL = `https://yzhan-admin-3gt4iizsb0c99971-1253481644.ap-shanghai.service.tcloudbase.com`
+const baseURL = `https://yzhan-admin-3gt4iizsb0c99971-1253481644.ap-shanghai.service.tcloudbase.com/api`
 
 const request = axios.create({
   baseURL,

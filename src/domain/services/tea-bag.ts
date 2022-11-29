@@ -1,5 +1,7 @@
-import { db } from './cloudbase'
 import { TeaBag, PartialTeaBag } from '@/domain/entities/tea-bag'
+import { db } from './cloudbase'
+import { teaBagApi } from './apis'
+import request from './request'
 
 const collection = db.collection('tea-bag')
 
@@ -7,7 +9,7 @@ export default class TeaBagService {
   static collection = collection
 
   static list() {
-    return collection.get() as Promise<Response<TeaBag>>
+    return request.get<Response<TeaBag>>(teaBagApi.list)
   }
 
   static create(data: PartialTeaBag) {

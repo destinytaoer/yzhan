@@ -1,4 +1,4 @@
-import { Goods } from '@/domain/entities/goods'
+import { Stock } from '@/domain/entities/stock'
 
 /**
  * 出入库单
@@ -8,10 +8,12 @@ export interface StockOrder {
   _id: ID
   // 出入库类型
   type: StockOrderType
-  // 商品列表
-  goods_list: Goods[]
-  // 总价
+  // 库存列表
+  stock_list: Stock[]
+  // 总价 = stock_list 总价值 = batch list 总价值
   total_price: number
+  // 关联订单
+  order_id?: ID
   // 创建时间
   created_at: string
 }

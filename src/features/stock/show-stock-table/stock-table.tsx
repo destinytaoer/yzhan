@@ -1,20 +1,23 @@
 import { FC, memo } from 'react'
-import { Table } from 'antd'
+import { Table, TableColumnType } from 'antd'
 import TableActions from '@/widgets/table-actions'
+import StockDetail from './stock-detail'
 
 import { useRequest } from 'ahooks'
+import { useModal } from '@/shared/hooks/useModal'
 import StockService from '@/domain/services/stock'
 import { Stock, displayStockType } from '@/domain/entities/stock'
-import { ColumnType } from 'antd/es/table'
 
 const StockTable: FC = () => {
   const { data } = useRequest(StockService.getStocks)
   const { data: list = [] } = data ?? {}
 
-  const columns: ColumnType<Stock>[] = [
-    { dataIndex: 'goods_name', title: '名称' },
+  const [detailDraw, showDetailDraw] = useModal<Stock>()
+
+  const columns: TableColumnType<Stock>[] = [
+    { dataIndex: 'name', title: '名称' },
     {
-      dataIndex: 'goods_type',
+      dataIndex: 'type',
       title: '类型',
       render(type) {
         return displayStockType(type)
@@ -34,7 +37,7 @@ const StockTable: FC = () => {
               {
                 key: 'detail',
                 text: '详情',
-                onClick: () => {},
+                onClick: () => showDetailDraw(data),
               },
             ]}
           />
@@ -42,9 +45,11 @@ const StockTable: FC = () => {
       },
     },
   ]
+
   return (
     <>
       <Table rowKey='_id' dataSource={list} columns={columns} />
+      <StockDetail modalRef={detailDraw} />
     </>
   )
 }

@@ -4,15 +4,15 @@
 
 @layer utilities {
     .page-container {
-        @apply px-6 py-5 h-full box-border
+        @apply px-6 py-4 h-full box-border
     }
 
     .page-main {
-        @apply px-8 py-5 bg-white h-full shadow box-border rounded-lg
+        @apply px-6 py-4 bg-white h-full shadow box-border rounded-lg
     }
 
     .page-header {
-        @apply h-10 flex items-center justify-between
+        @apply h-10 flex items-center
     }
 
     .page-content {
@@ -20,7 +20,7 @@
     }
 
     .page-header-title {
-        @apply text-2xl
+        @apply text-lg mb-0 flex-1
     }
 
     .page-header-extra-btns {

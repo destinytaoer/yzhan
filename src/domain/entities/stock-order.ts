@@ -1,4 +1,4 @@
-import { Stock } from '@/domain/entities/stock'
+import { Stock, StockBatch } from '@/domain/entities/stock'
 
 /**
  * 出入库单
@@ -18,7 +18,15 @@ export interface StockOrder {
   created_at: string
 }
 
-// 采购、退货/订单
+export type CreateStockOrder = Partial<StockOrder> & {
+  stock_list?: PartialStock[]
+}
+
+export type PartialStock = Partial<Stock> & {
+  batch_list?: Partial<StockBatch>[]
+}
+
+// 库存订单类型
 export enum StockOrderType {
   // 采购入库
   Purchase = 'PURCHASE',
@@ -27,3 +35,9 @@ export enum StockOrderType {
   // 订单出库
   Sale = 'SALE',
 }
+
+export const StockOrderTypeMap = new Map([
+  [StockOrderType.Purchase, '采购入库'],
+  [StockOrderType.Return, '退货入库'],
+  [StockOrderType.Sale, '订单出库'],
+])

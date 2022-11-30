@@ -19,7 +19,11 @@
 
     }
 
-    .page-title {
+    .page-header-title {
         @apply text-2xl
+    }
+
+    .page-header-extra-btns {
+        @apply flex items-center gap-x-5
     }
 }

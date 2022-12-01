@@ -14,7 +14,7 @@ const $ = _.aggregate
 
 exports.main = async function () {
   const res = await db
-    .collection('tea-bag')
+    .collection('teabag')
     .aggregate()
     // 聚合两张表
     .lookup({

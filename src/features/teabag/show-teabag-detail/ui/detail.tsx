@@ -3,20 +3,20 @@ import { Descriptions, Drawer } from 'antd'
 
 import { useModalImperative, IModalRef } from '@/shared/hooks/useModalImperative'
 import { displayGradientPrice } from '@/domain/entities/price'
-import { displayTeaBagCategory, TeaBag } from '@/domain/entities/tea-bag'
+import { displayTeabagCategory, Teabag } from '@/domain/entities/teabag'
 
-interface IMaterialDetailProps {
-  modalRef: RefObject<IModalRef<TeaBag>>
+interface ITeabagDetailProps {
+  modalRef: RefObject<IModalRef<Teabag>>
 }
 
-const MaterialDetail: FC<IMaterialDetailProps> = ({ modalRef }) => {
+const TeabagDetail: FC<ITeabagDetailProps> = ({ modalRef }) => {
   const { data, open, hide } = useModalImperative(modalRef)
 
   return (
     <Drawer title='详情' width={600} placement='right' onClose={hide} open={open}>
       <Descriptions column={2}>
         <Descriptions.Item label='名称'>{data?.name}</Descriptions.Item>
-        <Descriptions.Item label='分类'>{displayTeaBagCategory(data?.category)}</Descriptions.Item>
+        <Descriptions.Item label='分类'>{displayTeabagCategory(data?.category)}</Descriptions.Item>
         {/* <Descriptions.Item label='单位'>{data?.unit}</Descriptions.Item> */}
         <Descriptions.Item label='批发价'>{displayGradientPrice(data?.price_set?.gradient_wholesale_price)}</Descriptions.Item>
         <Descriptions.Item label='预置代理价'>{data?.price_set?.agency_price}</Descriptions.Item>
@@ -26,4 +26,4 @@ const MaterialDetail: FC<IMaterialDetailProps> = ({ modalRef }) => {
   )
 }
 
-export default MaterialDetail
+export default TeabagDetail

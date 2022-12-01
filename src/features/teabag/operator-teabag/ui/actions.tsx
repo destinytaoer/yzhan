@@ -2,18 +2,18 @@ import { FC } from 'react'
 import { message, Modal } from 'antd'
 import TableActions, { Action } from '@/widgets/table-actions'
 import { useRequest } from 'ahooks'
-import TeaBagService from '@/domain/services/tea-bag'
-import { TeaBag } from '@/domain/entities/tea-bag'
+import TeabagService from '@/domain/services/teabag'
+import { Teabag } from '@/domain/entities/teabag'
 
-interface ITeaBagActionsProps {
-  data: TeaBag
-  onDetail: (data: TeaBag) => void
-  onEdit: (data: TeaBag) => void
+interface ITeabagActionsProps {
+  data: Teabag
+  onDetail: (data: Teabag) => void
+  onEdit: (data: Teabag) => void
   onSuccess: () => void
 }
 
-const TeaBagActions: FC<ITeaBagActionsProps> = ({ data, onDetail, onEdit, onSuccess }) => {
-  const { run: remove } = useRequest(TeaBagService.remove, {
+const TeabagActions: FC<ITeabagActionsProps> = ({ data, onDetail, onEdit, onSuccess }) => {
+  const { run: remove } = useRequest(TeabagService.remove, {
     manual: true,
     onSuccess() {
       message.success('删除成功')
@@ -54,4 +54,4 @@ const TeaBagActions: FC<ITeaBagActionsProps> = ({ data, onDetail, onEdit, onSucc
   return <TableActions actions={actions} limitCount={3} />
 }
 
-export default TeaBagActions
+export default TeabagActions

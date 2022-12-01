@@ -1,9 +1,9 @@
-import MaterialPage from './material'
-import TeaBagPage from './tea-bag'
-import GiftBoxPage from './gift-box'
 import { Link, RouteObject } from 'react-router-dom'
 import { MenuProps } from 'antd'
 import { DatabaseOutlined } from '@ant-design/icons'
+import MaterialPage from './material'
+import TeabagPage from './teabag'
+import GiftBoxPage from './gift-box'
 
 export const DataManagementRoute: RouteObject[] = [
   {
@@ -11,8 +11,8 @@ export const DataManagementRoute: RouteObject[] = [
     element: <MaterialPage />,
   },
   {
-    path: '/data/tea-bag',
-    element: <TeaBagPage />,
+    path: '/data/teabag',
+    element: <TeabagPage />,
   },
   {
     path: '/data/gift-box',
@@ -27,8 +27,8 @@ export const DataManagementMenuItems: MenuProps['items'] = [
     icon: <DatabaseOutlined />,
   },
   {
-    label: <Link to='/data/tea-bag'>茶包管理</Link>,
-    key: 'tea-bag',
+    label: <Link to='/data/teabag'>茶包管理</Link>,
+    key: 'teabag',
   },
   {
     label: <Link to='/data/gift-box'>礼盒管理</Link>,

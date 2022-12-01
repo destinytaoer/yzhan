@@ -15,7 +15,7 @@ exports.main = async function (event) {
   const formula_ids = data.formula.map((item) => item._id)
 
   const now = db.serverDate()
-  return db.collection('tea-bag').add({
+  return db.collection('teabag').add({
     ...data,
     formula_ids,
     created_at: now,

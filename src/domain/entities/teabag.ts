@@ -4,16 +4,16 @@ import { PriceSet } from './price'
 /**
  * 茶包
  */
-export interface TeaBag {
+export interface Teabag {
   _id: ID
   // 名称
   name: string
   // 编号
   no: string
   // 品类
-  category: TeaBagCategory
+  category: TeabagCategory
   // 配方
-  formula: TeaBagMaterial[]
+  formula: TeabagMaterial[]
   // 适合人群
   suit_crowds: SuitCrowds[]
   // 功效
@@ -27,15 +27,15 @@ export interface TeaBag {
 }
 
 // 用于更新和创建
-export type PartialTeaBag = Partial<TeaBag> & {
-  formula?: Partial<TeaBagMaterial>[]
+export type PartialTeabag = Partial<Teabag> & {
+  formula?: Partial<TeabagMaterial>[]
   packaging?: Partial<Packaging>
 }
 
 /**
  * 茶包分类
  */
-export enum TeaBagCategory {
+export enum TeabagCategory {
   // 果饮
   FruitDrink = 'FRUIT_DRINK',
   // 花茶
@@ -54,20 +54,20 @@ export enum TeaBagCategory {
   SoybeanMilk = 'SOYBEAN_MILK',
 }
 
-export const TeaBagCategoryMap = new Map([
-  [TeaBagCategory.FruitDrink, '果饮'],
-  [TeaBagCategory.ScentedTea, '花茶'],
-  [TeaBagCategory.HealthPreservation, '养生类'],
-  [TeaBagCategory.Recuperate, '调理类'],
-  [TeaBagCategory.SoupStock, '汤包'],
-  [TeaBagCategory.Stew, '炖煮类'],
-  [TeaBagCategory.NourishingStew, '滋补炖煮类'],
-  [TeaBagCategory.SoybeanMilk, '豆类'],
+export const TeabagCategoryMap = new Map([
+  [TeabagCategory.FruitDrink, '果饮'],
+  [TeabagCategory.ScentedTea, '花茶'],
+  [TeabagCategory.HealthPreservation, '养生类'],
+  [TeabagCategory.Recuperate, '调理类'],
+  [TeabagCategory.SoupStock, '汤包'],
+  [TeabagCategory.Stew, '炖煮类'],
+  [TeabagCategory.NourishingStew, '滋补炖煮类'],
+  [TeabagCategory.SoybeanMilk, '豆类'],
 ])
 
-export function displayTeaBagCategory(category?: TeaBagCategory) {
+export function displayTeabagCategory(category?: TeabagCategory) {
   if (!category) return ''
-  return TeaBagCategoryMap.get(category) ?? '未知'
+  return TeabagCategoryMap.get(category) ?? '未知'
 }
 
 /**
@@ -113,7 +113,7 @@ export function displaySuitCrowds(suit_crowds: SuitCrowds[]) {
     .filter((item) => !!item)
 }
 
-export interface TeaBagMaterial extends Material {
+export interface TeabagMaterial extends Material {
   // 数量, 以字符串主要考虑到是以展示为主, 为了更加灵活
   // 满足 1-2 等情况
   quantity: string
@@ -134,7 +134,7 @@ export interface PackagingSize {
   unit: string
 }
 
-export function displayFormula(formula: TeaBagMaterial[]) {
+export function displayFormula(formula: TeabagMaterial[]) {
   return formula.map((material) => `${material.name} ${material.quantity} ${material.unit}`)
 }
 

@@ -4,18 +4,18 @@ import FormulaForm from './formula-form'
 
 import { useRequest } from 'ahooks'
 import { IModalRef, useModalImperative } from '@/shared/hooks/useModalImperative'
-import TeaBagService from '@/domain/services/tea-bag'
-import { TeaBag, PartialTeaBag, TeaBagCategoryMap, SuitCrowdsMap, splitEffects } from '@/domain/entities/tea-bag'
+import TeabagService from '@/domain/services/teabag'
+import { Teabag, PartialTeabag, TeabagCategoryMap, SuitCrowdsMap, splitEffects } from '@/domain/entities/teabag'
 
-interface ICreateOrEditTeaBagModalProps {
-  modalRef: RefObject<IModalRef<TeaBag | undefined>>
+interface ICreateOrEditTeabagModalProps {
+  modalRef: RefObject<IModalRef<Teabag | undefined>>
   onSuccess: () => void
 }
 
-const CreateOrEditTeaBagModal: FC<ICreateOrEditTeaBagModalProps> = ({ modalRef, onSuccess }) => {
+const CreateOrEditTeabagModal: FC<ICreateOrEditTeabagModalProps> = ({ modalRef, onSuccess }) => {
   const { data, open, hide } = useModalImperative(modalRef)
 
-  const { run: create } = useRequest(TeaBagService.create, {
+  const { run: create } = useRequest(TeabagService.create, {
     manual: true,
     onSuccess: () => {
       hide()
@@ -23,7 +23,7 @@ const CreateOrEditTeaBagModal: FC<ICreateOrEditTeaBagModalProps> = ({ modalRef, 
       onSuccess()
     },
   })
-  const { run: update } = useRequest(TeaBagService.update, {
+  const { run: update } = useRequest(TeabagService.update, {
     manual: true,
     onSuccess: () => {
       hide()
@@ -32,9 +32,9 @@ const CreateOrEditTeaBagModal: FC<ICreateOrEditTeaBagModalProps> = ({ modalRef, 
     },
   })
 
-  const [form] = Form.useForm<PartialTeaBag>()
+  const [form] = Form.useForm<PartialTeabag>()
 
-  const onFinish = async (values: PartialTeaBag) => {
+  const onFinish = async (values: PartialTeabag) => {
     const { effects, ...others } = values
     const now = new Date().toISOString()
     const realEffects = splitEffects(effects?.toString() ?? '')
@@ -60,7 +60,7 @@ const CreateOrEditTeaBagModal: FC<ICreateOrEditTeaBagModalProps> = ({ modalRef, 
   }
 
   useEffect(() => {
-    const initialValues: PartialTeaBag = {
+    const initialValues: PartialTeabag = {
       name: '',
       category: undefined,
       formula: [],
@@ -87,7 +87,7 @@ const CreateOrEditTeaBagModal: FC<ICreateOrEditTeaBagModalProps> = ({ modalRef, 
           </Form.Item>
           <Form.Item label='分类' name='category' rules={[{ required: true }]}>
             <Select placeholder='请选择'>
-              {[...TeaBagCategoryMap.entries()].map((item) => {
+              {[...TeabagCategoryMap.entries()].map((item) => {
                 const [key, label] = item
                 return (
                   <Select.Option key={key} value={key}>
@@ -140,4 +140,4 @@ const CreateOrEditTeaBagModal: FC<ICreateOrEditTeaBagModalProps> = ({ modalRef, 
   )
 }
 
-export default CreateOrEditTeaBagModal
+export default CreateOrEditTeabagModal

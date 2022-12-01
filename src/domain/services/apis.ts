@@ -5,7 +5,7 @@ export const materialApi = {
   remove: '/material/remove',
 }
 
-export const teaBagApi = {
-  list: '/tea-bag/list',
+export const teabagApi = {
+  list: '/teabag/list',
   create: '/teabag/create',
 }

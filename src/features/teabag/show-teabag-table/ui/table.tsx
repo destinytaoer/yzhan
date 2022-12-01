@@ -1,15 +1,15 @@
 import { FC, ReactNode } from 'react'
 import { Table, Tag } from 'antd'
-import { displayEffects, displayFormula, displaySuitCrowds, displayTeaBagCategory, TeaBag } from '@/domain/entities/tea-bag'
+import { displayEffects, displayFormula, displaySuitCrowds, displayTeabagCategory, Teabag } from '@/domain/entities/teabag'
 import type { ColumnType } from 'antd/es/table'
 
-interface ITeaBagTableProps {
-  list: TeaBag[]
-  renderActions: (data: TeaBag) => ReactNode
+interface ITeabagTableProps {
+  list: Teabag[]
+  renderActions: (data: Teabag) => ReactNode
 }
 
-const TeaBagTable: FC<ITeaBagTableProps> = ({ list, renderActions }) => {
-  const columns: ColumnType<TeaBag>[] = [
+const TeabagTable: FC<ITeabagTableProps> = ({ list, renderActions }) => {
+  const columns: ColumnType<Teabag>[] = [
     // {
     //   dataIndex: '_id',
     //   title: 'ID',
@@ -22,7 +22,7 @@ const TeaBagTable: FC<ITeaBagTableProps> = ({ list, renderActions }) => {
       title: '分类',
       width: 100,
       render(category) {
-        return displayTeaBagCategory(category)
+        return displayTeabagCategory(category)
       },
     },
     {
@@ -72,4 +72,4 @@ const TeaBagTable: FC<ITeaBagTableProps> = ({ list, renderActions }) => {
   return <Table rowKey='_id' dataSource={list} columns={columns} />
 }
 
-export default TeaBagTable
+export default TeabagTable

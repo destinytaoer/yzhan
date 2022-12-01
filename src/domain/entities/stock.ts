@@ -15,12 +15,12 @@ export interface Stock {
 }
 
 export enum StockType {
-  TeaBag = 'TEA_BAG',
-  GiftBox = 'GiftBox',
+  Teabag = 'TEABAG',
+  GiftBox = 'GIFT_BOX',
 }
 
 export const StockTypeMap = new Map([
-  [StockType.TeaBag, '茶包'],
+  [StockType.Teabag, '茶包'],
   [StockType.GiftBox, '礼盒'],
 ])
 

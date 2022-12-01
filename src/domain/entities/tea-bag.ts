@@ -65,7 +65,8 @@ export const TeaBagCategoryMap = new Map([
   [TeaBagCategory.SoybeanMilk, '豆类'],
 ])
 
-export function displayTeaBagCategory(category: TeaBagCategory) {
+export function displayTeaBagCategory(category?: TeaBagCategory) {
+  if (!category) return ''
   return TeaBagCategoryMap.get(category) ?? '未知'
 }
 

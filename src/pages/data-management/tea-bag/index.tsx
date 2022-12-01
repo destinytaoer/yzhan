@@ -6,11 +6,14 @@ import { useRequest } from 'ahooks'
 import { useModal } from '@/shared/hooks/useModal'
 import TeaBagService from '@/domain/services/tea-bag'
 import { TeaBag } from '@/domain/entities/tea-bag'
+import MaterialDetail from '@/features/tea-bag/show-tea-bag-detail/ui/detail'
+import TeaBagActions from '../../../features/tea-bag/operator-tea-bag/ui/actions'
 
 const TeaBagPage: FC = () => {
   const { data, refresh } = useRequest(TeaBagService.list)
   const { data: list = [] } = data ?? {}
 
+  const [detailDraw, showDetailDraw] = useModal<TeaBag>()
   const [createOrEditModal, showCreateOrEditModal] = useModal<TeaBag | undefined>()
 
   return (
@@ -23,7 +26,13 @@ const TeaBagPage: FC = () => {
           </Button>
         </div>
         <div className='page-content'>
-          <TeaBagTable list={list} renderActions={() => null} />
+          <TeaBagTable
+            list={list}
+            renderActions={(data) => (
+              <TeaBagActions data={data} onDetail={showDetailDraw} onEdit={() => showCreateOrEditModal(data)} onSuccess={refresh} />
+            )}
+          />
+          <MaterialDetail modalRef={detailDraw} />
           <CreateOrEditTeaBagModal modalRef={createOrEditModal} onSuccess={refresh} />
         </div>
       </div>

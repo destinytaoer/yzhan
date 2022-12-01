@@ -13,7 +13,7 @@ export default class TeaBagService {
   }
 
   static create(data: PartialTeaBag) {
-    return collection.add(data)
+    return request.post(teaBagApi.create, data)
   }
 
   static update(id: string, data: PartialTeaBag) {

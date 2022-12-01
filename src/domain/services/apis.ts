@@ -7,4 +7,5 @@ export const materialApi = {
 
 export const teaBagApi = {
   list: '/tea-bag/list',
+  create: '/teabag/create',
 }

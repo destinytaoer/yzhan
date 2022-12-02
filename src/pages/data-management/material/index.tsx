@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { Button } from 'antd'
+import ListPageContainer from '@/widgets/list-page-container'
 import { MaterialActions, MaterialTable, MaterialDetail, EditMaterialModal } from '@/features/material'
 
 import { useModal } from '@/shared/hooks/useModal'
@@ -15,24 +16,21 @@ const MaterialPage: FC = () => {
   const [createOrEditModal, showCreateOrEditModal] = useModal<Material | undefined>()
 
   return (
-    <div className='page-container'>
-      <div className='page-main'>
-        <div className='page-header'>
-          <h2 className='page-title'>原材料管理</h2>
-          <Button type='primary' onClick={() => showCreateOrEditModal(undefined)}>
-            新建材料
-          </Button>
-        </div>
-        <div className='page-content'>
-          <MaterialTable
-            list={list}
-            renderActions={(data) => <MaterialActions data={data} onDetail={showDetailDraw} onEdit={showCreateOrEditModal} onSuccess={refresh} />}
-          />
-          <MaterialDetail modalRef={detailDraw} />
-          <EditMaterialModal modalRef={createOrEditModal} onSuccess={refresh} />
-        </div>
-      </div>
-    </div>
+    <ListPageContainer
+      title='原材料管理'
+      extraButtons={
+        <Button type='primary' onClick={() => showCreateOrEditModal(undefined)}>
+          新建材料
+        </Button>
+      }
+    >
+      <MaterialTable
+        list={list}
+        renderActions={(data) => <MaterialActions data={data} onDetail={showDetailDraw} onEdit={showCreateOrEditModal} onSuccess={refresh} />}
+      />
+      <MaterialDetail modalRef={detailDraw} />
+      <EditMaterialModal modalRef={createOrEditModal} onSuccess={refresh} />
+    </ListPageContainer>
   )
 }
 

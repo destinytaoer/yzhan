@@ -8,6 +8,6 @@ export default class StockService {
       .collection('stock')
       .where({ remnant_inventory: _.gt(0) })
       .orderBy('remnant_inventory', 'desc')
-      .get() as Promise<Response<Stock>>
+      .get() as Promise<ListResponse<Stock>>
   }
 }

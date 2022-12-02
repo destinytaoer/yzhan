@@ -1,13 +1,13 @@
-import axios from 'axios'
+import axios, { AxiosRequestConfig } from 'axios'
 import { auth } from './cloudbase'
 
 const baseURL = `https://yzhan-admin-3gt4iizsb0c99971-1253481644.ap-shanghai.service.tcloudbase.com/api`
 
-const request = axios.create({
+const axiosInstance = axios.create({
   baseURL,
 })
 
-request.interceptors.request.use(
+axiosInstance.interceptors.request.use(
   (config) => {
     //请求拦截一般会有哪些操作
     // 1.比如config中的一些信息不符合服务器的要求,这里可以做一些修改
@@ -29,7 +29,7 @@ request.interceptors.request.use(
   },
 )
 
-request.interceptors.response.use(
+axiosInstance.interceptors.response.use(
   (res) => {
     // 成功响应的拦截
     return Promise.resolve(res.data)
@@ -63,4 +63,13 @@ request.interceptors.response.use(
   },
 )
 
+const request = {
+  get<T = any>(url: string, config?: AxiosRequestConfig): Promise<T> {
+    return axiosInstance.get(url, config)
+  },
+
+  post<T = any>(url: string, data?: object, config?: AxiosRequestConfig): Promise<T> {
+    return axiosInstance.post(url, data, config)
+  },
+}
 export default request

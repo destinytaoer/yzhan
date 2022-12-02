@@ -2,7 +2,7 @@ type ID = string
 
 type AnyObject = Record<string, any>
 
-interface Response<T extends AnyObject = any> {
+interface ListResponse<T extends AnyObject = any> {
   data: T[]
   requestId: string
   total: number

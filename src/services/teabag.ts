@@ -8,8 +8,8 @@ const collection = db.collection('teabag')
 export default class TeabagService {
   static collection = collection
 
-  static list(): Promise<Response<Teabag>> {
-    return request.get(teabagApi.list)
+  static list() {
+    return request.get<ListResponse<Teabag>>(teabagApi.list)
   }
 
   static create(data: PartialTeabag) {

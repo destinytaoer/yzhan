@@ -1,4 +1,4 @@
-import { Teabag, PartialTeabag } from '@/domain/entities/teabag'
+import { Teabag, PartialTeabag } from '@/entities/teabag'
 import { db } from './cloudbase'
 import { teabagApi } from './apis'
 import request from './request'

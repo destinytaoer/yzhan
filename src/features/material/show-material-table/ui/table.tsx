@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react'
 import { Table } from 'antd'
-import { displayMaterialCategory, Material } from '@/domain/entities/material'
+import { displayMaterialCategory, Material } from '@/entities/material'
 import type { ColumnType } from 'antd/es/table'
 
 interface IMaterialTableProps {

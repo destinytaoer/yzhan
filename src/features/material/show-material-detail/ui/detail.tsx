@@ -1,8 +1,8 @@
 import { FC, RefObject } from 'react'
-import { displayMaterialCategory, Material } from '@/domain/entities/material'
+import { displayMaterialCategory, Material } from '@/entities/material'
 import { useModalImperative, IModalRef } from '@/shared/hooks/useModalImperative'
 import { Descriptions, Drawer } from 'antd'
-import { displayGradientPrice } from '@/domain/entities/price'
+import { displayGradientPrice } from '@/entities/price'
 
 interface IMaterialDetailProps {
   modalRef: RefObject<IModalRef<Material>>

@@ -1,5 +1,5 @@
-import { db } from '@/domain/services/cloudbase'
-import { Stock } from '@/domain/entities/stock'
+import { db } from '@/services/cloudbase'
+import { Stock } from '@/entities/stock'
 
 const _ = db.command
 export default class StockService {

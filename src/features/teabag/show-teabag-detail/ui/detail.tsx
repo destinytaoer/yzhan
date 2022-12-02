@@ -2,8 +2,8 @@ import { FC, RefObject } from 'react'
 import { Descriptions, Drawer } from 'antd'
 
 import { useModalImperative, IModalRef } from '@/shared/hooks/useModalImperative'
-import { displayGradientPrice } from '@/domain/entities/price'
-import { displayTeabagCategory, Teabag } from '@/domain/entities/teabag'
+import { displayGradientPrice } from '@/entities/price'
+import { displayTeabagCategory, Teabag } from '@/entities/teabag'
 
 interface ITeabagDetailProps {
   modalRef: RefObject<IModalRef<Teabag>>

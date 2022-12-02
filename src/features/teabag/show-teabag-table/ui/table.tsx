@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react'
 import { Table, Tag } from 'antd'
-import { displayEffects, displayFormula, displaySuitCrowds, displayTeabagCategory, Teabag } from '@/domain/entities/teabag'
+import { displayEffects, displayFormula, displaySuitCrowds, displayTeabagCategory, Teabag } from '@/entities/teabag'
 import type { ColumnType } from 'antd/es/table'
 
 interface ITeabagTableProps {
@@ -32,7 +32,7 @@ const TeabagTable: FC<ITeabagTableProps> = ({ list, renderActions }) => {
         return (
           <div>
             {displayFormula(formula).map((item) => (
-              <div>{item}</div>
+              <div key={item}>{item}</div>
             ))}
           </div>
         )

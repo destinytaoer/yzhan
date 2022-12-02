@@ -1,4 +1,4 @@
-import { Stock, StockBatch } from '@/domain/entities/stock'
+import { Stock, StockBatch } from '@/entities/stock'
 
 /**
  * 出入库单

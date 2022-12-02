@@ -1,4 +1,4 @@
-import { auth } from '@/domain/services/cloudbase'
+import { auth } from '@/services/cloudbase'
 
 export async function login() {
   console.log('auth', auth.currentUser)

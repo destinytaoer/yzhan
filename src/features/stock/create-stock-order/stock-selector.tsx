@@ -2,8 +2,8 @@ import { FC, useEffect, useMemo, useState } from 'react'
 import { Collapse, Form, Input, InputNumber, Space } from 'antd'
 
 import { groupBy } from 'lodash'
-import { TeaBagCategory } from '@/domain/entities/tea-bag'
-import { PartialStock } from '@/domain/entities/stock-order'
+import { TeabagCategory } from '@/entities/teabag'
+import { PartialStock } from '@/entities/stock-order'
 
 interface IStockSelectorProps {
   value?: PartialStock[]
@@ -57,9 +57,9 @@ const teaBags = [
   stock_id: `TB-${item._id}`,
   stock_type: 'TEA_BAG',
 }))
-const TeaBagCategoryMap = new Map([
-  [TeaBagCategory.FruitDrink, '果茶'],
-  [TeaBagCategory.ScentedTea, '花茶'],
+const TeabagCategoryMap = new Map([
+  [TeabagCategory.FruitDrink, '果茶'],
+  [TeabagCategory.ScentedTea, '花茶'],
 ])
 
 const StockSelector: FC<IStockSelectorProps> = ({ value, onChange }) => {
@@ -92,8 +92,8 @@ const StockSelector: FC<IStockSelectorProps> = ({ value, onChange }) => {
       {(fields) => (
         <div className='w-full'>
           {fields.slice(0, 4).map(({ key, name, ...restField }) => (
-            <Collapse bordered={false} defaultActiveKey={[...TeaBagCategoryMap.keys()]}>
-              {[...TeaBagCategoryMap.entries()].map(([category, title]) => (
+            <Collapse bordered={false} defaultActiveKey={[...TeabagCategoryMap.keys()]}>
+              {[...TeabagCategoryMap.entries()].map(([category, title]) => (
                 <Panel header={title} key={category}>
                   <Space direction='horizontal' wrap>
                     {TeaBagGroups[category].map((teaBag) => {

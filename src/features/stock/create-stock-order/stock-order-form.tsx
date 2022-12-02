@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Form, Button, Radio } from 'antd'
-import { CreateStockOrder, StockOrderType, StockOrderTypeMap } from '@/domain/entities/stock-order'
-import StockSelector from '@/features/stock/create-stock-order/stock-selector'
+import StockSelector from './stock-selector'
+import { CreateStockOrder, StockOrderType, StockOrderTypeMap } from '@/entities/stock-order'
 
 const StockOrderForm: FC = () => {
   const [form] = Form.useForm<CreateStockOrder>()
@@ -17,10 +17,13 @@ const StockOrderForm: FC = () => {
       onValuesChange={(changedFields) => {
         console.log(changedFields)
       }}
+      initialValues={{
+        type: StockOrderType.Purchase,
+      }}
       onFinish={onFinish}
     >
       <Form.Item label='订单类型' name='type'>
-        <Radio.Group defaultValue={StockOrderType.Purchase} buttonStyle='solid'>
+        <Radio.Group buttonStyle='solid'>
           {[...StockOrderTypeMap.entries()].map(([value, label]) => (
             <Radio.Button key={value} value={value}>
               {label}

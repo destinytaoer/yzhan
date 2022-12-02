@@ -1,4 +1,4 @@
-import { Material } from '@/domain/entities/material'
+import { Material } from '@/entities/material'
 import { db } from './cloudbase'
 import { materialApi } from './apis'
 import request from './request'

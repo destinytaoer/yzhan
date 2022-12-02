@@ -5,8 +5,8 @@ import StockDetail from './stock-detail'
 
 import { useRequest } from 'ahooks'
 import { useModal } from '@/shared/hooks/useModal'
-import StockService from '@/domain/services/stock'
-import { Stock, displayStockType } from '@/domain/entities/stock'
+import StockService from '@/services/stock'
+import { Stock, displayStockType } from '@/entities/stock'
 
 const StockTable: FC = () => {
   const { data } = useRequest(StockService.getStocks)

@@ -5,8 +5,8 @@ import { TeabagTable, TeabagDetail, TeabagActions, CreateOrEditTeabagModal } fro
 
 import { useRequest } from 'ahooks'
 import { useModal } from '@/shared/hooks/useModal'
-import TeabagService from '@/domain/services/teabag'
-import { Teabag } from '@/domain/entities/teabag'
+import TeabagService from '@/services/teabag'
+import { Teabag } from '@/entities/teabag'
 
 const TeabagPage: FC = () => {
   const { data, refresh } = useRequest(TeabagService.list)

@@ -5,8 +5,8 @@ import { MaterialActions, MaterialTable, MaterialDetail, EditMaterialModal } fro
 
 import { useModal } from '@/shared/hooks/useModal'
 import { useRequest } from 'ahooks'
-import MaterialService from '@/domain/services/material'
-import { Material } from '@/domain/entities/material'
+import MaterialService from '@/services/material'
+import { Material } from '@/entities/material'
 
 const MaterialPage: FC = () => {
   const { data, refresh } = useRequest(MaterialService.list)

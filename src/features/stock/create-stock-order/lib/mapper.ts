@@ -1,19 +1,19 @@
 import { CreateStockOrder, PartialStock, StockOrderType } from '@/entities/stock-order'
 import { CommonStockInfo } from '@/entities/stock'
 
-export interface StockForm {
+export interface StockFormData {
   _id: string
   count?: number
   price?: number
 }
 
-export interface StockOrderForm {
+export interface StockOrderFormData {
   type: StockOrderType
-  teabagList: StockForm[]
+  teabagList: StockFormData[]
 }
 
 // 创建表单数据转换为库存订单数据
-export function createFormToCreateData(createForm: StockOrderForm, commonStockList: CommonStockInfo[]): CreateStockOrder {
+export function createFormToCreateData(createForm: StockOrderFormData, commonStockList: CommonStockInfo[]): CreateStockOrder {
   const { type, teabagList } = createForm
   const stock_list = stockFormListToStockList(teabagList, commonStockList)
   return {
@@ -22,7 +22,7 @@ export function createFormToCreateData(createForm: StockOrderForm, commonStockLi
   }
 }
 
-export function stockFormListToStockList(teabagList: StockForm[], commonStockList: CommonStockInfo[]): PartialStock[] {
+export function stockFormListToStockList(teabagList: StockFormData[], commonStockList: CommonStockInfo[]): PartialStock[] {
   return teabagList.map((item) => {
     const stock = commonStockList.find((s) => item._id === s._id)
     return {

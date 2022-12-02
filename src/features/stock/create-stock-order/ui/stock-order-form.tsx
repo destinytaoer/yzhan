@@ -3,15 +3,15 @@ import { Form, Button, Radio } from 'antd'
 import StockSelector from './stock-selector'
 import { StockOrderType, StockOrderTypeMap } from '@/entities/stock-order'
 import { useStockTeabags } from '../lib/useStockTeabags'
-import { createFormToCreateData, StockOrderForm } from '../lib/mapper'
+import { createFormToCreateData, StockOrderFormData } from '../lib/mapper'
 
 const StockOrderForm: FC = () => {
   // 获取茶包数据
   const [loading, stockTeabags] = useStockTeabags()
 
-  const [form] = Form.useForm<StockOrderForm>()
+  const [form] = Form.useForm<StockOrderFormData>()
 
-  const onFinish = (values: StockOrderForm) => {
+  const onFinish = (values: StockOrderFormData) => {
     const createOrder = createFormToCreateData(values, stockTeabags)
     console.log('createOrder', createOrder)
   }

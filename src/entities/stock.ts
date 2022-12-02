@@ -1,22 +1,34 @@
 /**
  * 库存货物
  */
-export interface Stock {
-  // 由物品类型 + 物品 id
-  _id: ID
-  // 存货类型
-  type: StockType
-  // 货物名称
-  name: string
+export interface Stock extends CommonStockInfo {
   // 剩余总库存
   remnant_inventory: number
   // 批次列表
   batch_list: StockBatch[]
 }
 
+export interface CommonStockInfo {
+  // 由物品类型 + 物品 id
+  _id: ID
+  // 存货类型
+  type: StockType
+  // 货物名称
+  name: string
+}
+
 export enum StockType {
   Teabag = 'TEABAG',
   GiftBox = 'GIFT_BOX',
+}
+
+export const StockTypeIdPrefixMap = new Map([
+  [StockType.Teabag, 'TB-'],
+  [StockType.GiftBox, 'GB-'],
+])
+
+export function getStockId(id: string, type: StockType) {
+  return `${StockTypeIdPrefixMap.get(type ?? '')}${id}`
 }
 
 export const StockTypeMap = new Map([

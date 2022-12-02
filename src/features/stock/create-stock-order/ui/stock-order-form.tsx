@@ -1,13 +1,19 @@
 import { FC } from 'react'
 import { Form, Button, Radio } from 'antd'
 import StockSelector from './stock-selector'
-import { CreateStockOrder, StockOrderType, StockOrderTypeMap } from '@/entities/stock-order'
+import { StockOrderType, StockOrderTypeMap } from '@/entities/stock-order'
+import { useStockTeabags } from '../lib/useStockTeabags'
+import { createFormToCreateData, StockOrderForm } from '../lib/mapper'
 
 const StockOrderForm: FC = () => {
-  const [form] = Form.useForm<CreateStockOrder>()
+  // 获取茶包数据
+  const [loading, stockTeabags] = useStockTeabags()
 
-  const onFinish = (values: CreateStockOrder) => {
-    console.log(values)
+  const [form] = Form.useForm<StockOrderForm>()
+
+  const onFinish = (values: StockOrderForm) => {
+    const createOrder = createFormToCreateData(values, stockTeabags)
+    console.log('createOrder', createOrder)
   }
 
   return (
@@ -31,9 +37,8 @@ const StockOrderForm: FC = () => {
           ))}
         </Radio.Group>
       </Form.Item>
-      <Form.Item label='选择库存' name='stock_list'>
-        <StockSelector />
-      </Form.Item>
+      <Form.Item label='选择茶包'></Form.Item>
+      <StockSelector fieldName='teabagList' stockList={stockTeabags} />
       <Form.Item>
         <Button type='primary' htmlType='submit'>
           创建

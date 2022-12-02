@@ -18,12 +18,12 @@ export interface StockOrder {
   created_at: string
 }
 
-export type CreateStockOrder = Partial<StockOrder> & {
-  stock_list?: PartialStock[]
+export type CreateStockOrder = Partial<Omit<StockOrder, 'stock_list'>> & {
+  stock_list: PartialStock[]
 }
 
-export type PartialStock = Partial<Stock> & {
-  batch_list?: Partial<StockBatch>[]
+export type PartialStock = Partial<Omit<Stock, 'batch_list'>> & {
+  batch_list: Partial<StockBatch>[]
 }
 
 // 库存订单类型

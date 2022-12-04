@@ -17,6 +17,7 @@ exports.main = async function () {
     .collection('teabag')
     .aggregate()
     // 聚合两张表
+    .limit(1000)
     .lookup({
       from: 'material',
       localField: 'formula_ids',

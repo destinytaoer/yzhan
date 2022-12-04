@@ -1,4 +1,5 @@
-import { Stock, StockBatch } from '@/entities/stock'
+import Big from 'big.js'
+import { calcStockTotalPrice, Stock, StockType } from '@/entities/stock'
 
 /**
  * 出入库单
@@ -18,12 +19,22 @@ export interface StockOrder {
   created_at: string
 }
 
-export type CreateStockOrder = Partial<Omit<StockOrder, 'stock_list'>> & {
+export type CreateStockOrder = {
+  type: StockOrderType
   stock_list: PartialStock[]
+  total_price: number
 }
 
-export type PartialStock = Partial<Omit<Stock, 'batch_list'>> & {
-  batch_list: Partial<StockBatch>[]
+export type PartialStock = {
+  _id: ID
+  type: StockType
+  name: string
+  batch_list: PartialStockBatch[]
+}
+
+export type PartialStockBatch = {
+  stock_price: number
+  total: number
 }
 
 // 库存订单类型
@@ -41,3 +52,15 @@ export const StockOrderTypeMap = new Map([
   [StockOrderType.Return, '退货入库'],
   [StockOrderType.Sale, '订单出库'],
 ])
+
+/**
+ * 创建库存单时, 计算总价
+ * @param stocks
+ */
+export function calcCreateOrderTotalPrice(stocks: PartialStock[]) {
+  return stocks
+    .map((stock) => calcStockTotalPrice(stock as Stock))
+    .reduce((prev, cur) => {
+      return Big(prev).plus(cur).toNumber()
+    }, 0)
+}

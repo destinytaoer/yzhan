@@ -1,5 +1,5 @@
-import { CreateStockOrder, PartialStock, StockOrderType } from '@/entities/stock-order'
-import { CommonStockInfo } from '@/entities/stock'
+import { calcCreateOrderTotalPrice, CreateStockOrder, PartialStock, StockOrderType } from '@/entities/stock-order'
+import { CommonStockInfo, Stock } from '@/entities/stock'
 
 export interface StockFormData {
   _id: string
@@ -16,15 +16,22 @@ export interface StockOrderFormData {
 export function createFormToCreateData(createForm: StockOrderFormData, commonStockList: CommonStockInfo[]): CreateStockOrder {
   const { type, teabagList } = createForm
   const stock_list = stockFormListToStockList(teabagList, commonStockList)
+  const total_price = calcCreateOrderTotalPrice(stock_list)
   return {
     type,
-    stock_list
+    stock_list,
+    total_price,
   }
 }
 
 export function stockFormListToStockList(teabagList: StockFormData[], commonStockList: CommonStockInfo[]): PartialStock[] {
   return teabagList.map((item) => {
-    const stock = commonStockList.find((s) => item._id === s._id)
+    const stock = commonStockList.find((s) => item._id === s._id)!
+
+    if (!stock){
+      console.error(`${item._id} Not Found`)
+    }
+
     return {
       ...stock,
       batch_list: [

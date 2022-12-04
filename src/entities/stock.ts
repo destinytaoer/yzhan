@@ -1,3 +1,5 @@
+import Big from 'big.js'
+
 /**
  * 库存货物
  */
@@ -52,4 +54,26 @@ export interface StockBatch {
   total: number
   // 剩余库存
   remain: number
+}
+
+/**
+ * 计算某个批次商品的总价
+ * @param batch
+ */
+export function calcBatchItemTotalPrice(batch: StockBatch) {
+  const { stock_price, total } = batch
+  return Big(stock_price).times(total).toNumber()
+}
+
+/**
+ * 计算库存剩余价值
+ * @param stock
+ */
+export function calcStockTotalPrice(stock: Stock) {
+  const { batch_list } = stock
+  return batch_list
+    .map((batch) => calcBatchItemTotalPrice(batch))
+    .reduce((prev, cur) => {
+      return Big(prev).plus(cur).toNumber()
+    }, 0)
 }

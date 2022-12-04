@@ -1,19 +1,31 @@
 import { FC } from 'react'
-import { Form, Button, Radio } from 'antd'
+import { Form, Button, Radio, message } from 'antd'
 import StockSelector from './stock-selector'
 import { StockOrderType, StockOrderTypeMap } from '@/entities/stock-order'
 import { useStockTeabags } from '../lib/useStockTeabags'
 import { createFormToCreateData, StockOrderFormData } from '../lib/mapper'
+import StockService from '@/services/stock'
+import { useRequest } from 'ahooks'
+import { useNavigate } from 'react-router-dom'
 
 const StockOrderForm: FC = () => {
+  const navigate = useNavigate()
   // 获取茶包数据
   const [loading, stockTeabags] = useStockTeabags()
+  const { loading: createLoading, run: createOrder } = useRequest(StockService.createStockOrder, {
+    manual: true,
+    onSuccess: () => {
+      message.success('创建成功')
+      navigate(-1)
+    },
+  })
 
   const [form] = Form.useForm<StockOrderFormData>()
 
   const onFinish = (values: StockOrderFormData) => {
-    const createOrder = createFormToCreateData(values, stockTeabags)
-    console.log('createOrder', createOrder)
+    const orderData = createFormToCreateData(values, stockTeabags)
+    console.log('createOrder', orderData)
+    createOrder(orderData)
   }
 
   return (
@@ -40,7 +52,7 @@ const StockOrderForm: FC = () => {
       <Form.Item label='选择茶包'></Form.Item>
       <StockSelector fieldName='teabagList' stockList={stockTeabags} />
       <Form.Item>
-        <Button type='primary' htmlType='submit'>
+        <Button type='primary' htmlType='submit' loading={createLoading}>
           创建
         </Button>
       </Form.Item>

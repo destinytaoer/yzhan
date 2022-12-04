@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Form, Input, InputNumber, Space, Button, Select, Row, Col } from 'antd'
+import { Form, InputNumber, Button, Select, Row, Col } from 'antd'
 import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons'
 import { CommonStockInfo } from '@/entities/stock'
 
@@ -43,12 +43,12 @@ const StockSelector: FC<IStockSelectorProps> = ({ fieldName, stockList }) => {
                 </Col>
                 <Col span={6}>
                   <Form.Item {...restField} name={[name, 'count']} rules={[{ required: true, message: '请输入数量' }]}>
-                    <Input placeholder='数量' />
+                    <InputNumber placeholder='数量' />
                   </Form.Item>
                 </Col>
                 <Col span={6}>
                   <Form.Item {...restField} name={[name, 'price']} rules={[{ required: true, message: '请输入价格' }]}>
-                    <Input placeholder='价格' />
+                    <InputNumber placeholder='价格' />
                   </Form.Item>
                 </Col>
                 <Col span={4}>

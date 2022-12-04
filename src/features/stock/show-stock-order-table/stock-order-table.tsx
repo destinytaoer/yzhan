@@ -1,10 +1,9 @@
 import { FC } from 'react'
 import { Table, TableColumnType } from 'antd'
-import { displayStockType } from '@/entities/stock'
 import TableActions from '@/widgets/table-actions'
 import { useRequest } from 'ahooks'
 import StockService from '@/services/stock'
-import { StockOrder } from '@/entities/stock-order'
+import { displayStockOrderType, StockOrder } from '@/entities/stock-order'
 
 const StockOrderTable: FC = () => {
   const { data } = useRequest(StockService.getStockOrders)
@@ -16,7 +15,7 @@ const StockOrderTable: FC = () => {
       dataIndex: 'type',
       title: '类型',
       render(type) {
-        return displayStockType(type)
+        return displayStockOrderType(type)
       },
     },
     {

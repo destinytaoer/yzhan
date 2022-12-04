@@ -1,6 +1,8 @@
-import { db } from '@/services/cloudbase'
+import { app, db } from '@/services/cloudbase'
+import request from './request'
+import { stockApi } from '@/services/apis'
 import { Stock } from '@/entities/stock'
-import { StockOrder } from '@/entities/stock-order'
+import { CreateStockOrder, StockOrder } from '@/entities/stock-order'
 
 const _ = db.command
 export default class StockService {
@@ -16,5 +18,15 @@ export default class StockService {
 
   static getStockOrders() {
     return db.collection('stock-order').orderBy('created_at', 'desc').get() as Promise<ListResponse<StockOrder>>
+  }
+
+  static createStockOrder(createData: CreateStockOrder) {
+    // return request.post(stockApi.createOrder, createData)
+    return app.callFunction({
+      // 云函数名称
+      name: 'create-stock-order',
+      // 传给云函数的参数
+      data: createData,
+    })
   }
 }

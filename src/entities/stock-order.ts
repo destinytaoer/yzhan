@@ -53,6 +53,11 @@ export const StockOrderTypeMap = new Map([
   [StockOrderType.Sale, '订单出库'],
 ])
 
+export function displayStockOrderType(type?: StockOrderType) {
+  if (!type) return ''
+  return StockOrderTypeMap.get(type)
+}
+
 /**
  * 创建库存单时, 计算总价
  * @param stocks

@@ -9,3 +9,8 @@ export const teabagApi = {
   list: '/teabag/list',
   create: '/teabag/create',
 }
+
+export const stockApi = {
+  list: '/stock/list',
+  createOrder: '/stock/order/create',
+}

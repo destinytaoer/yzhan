@@ -52,7 +52,7 @@ const StockSelector: FC<IStockSelectorProps> = ({ fieldName, stockList }) => {
                   </Form.Item>
                 </Col>
                 <Col span={4}>
-                  <MinusCircleOutlined className='h-8' onClick={() => remove(name)} />
+                  <MinusCircleOutlined className='h-8 mb-6' onClick={() => remove(name)} />
                 </Col>
               </Row>
             ))}

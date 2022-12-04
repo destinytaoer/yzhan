@@ -8,7 +8,7 @@
     }
 
     .page-main {
-        @apply px-6 py-4 bg-white h-full shadow box-border rounded-lg
+        @apply px-6 py-4 bg-white h-full shadow box-border rounded-lg flex flex-col;
     }
 
     .page-header {
@@ -16,7 +16,7 @@
     }
 
     .page-content {
-
+        @apply flex-1 min-h-0 overflow-y-auto;
     }
 
     .page-header-title {

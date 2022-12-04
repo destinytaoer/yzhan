@@ -30,11 +30,11 @@ const StockOrderForm: FC = () => {
     >
       <Form.Item label='订单类型' name='type'>
         <Radio.Group buttonStyle='solid'>
-          {[...StockOrderTypeMap.entries()].map(([value, label]) => (
-            <Radio.Button key={value} value={value}>
-              {label}
-            </Radio.Button>
-          ))}
+          {/*{[...StockOrderTypeMap.entries()].map(([value, label]) => (*/}
+          <Radio.Button key={StockOrderType.Purchase} value={StockOrderType.Purchase}>
+            {StockOrderTypeMap.get(StockOrderType.Purchase)}
+          </Radio.Button>
+          {/*))}*/}
         </Radio.Group>
       </Form.Item>
       <Form.Item label='选择茶包'></Form.Item>

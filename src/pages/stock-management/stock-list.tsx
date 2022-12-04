@@ -12,7 +12,7 @@ const StockListPage: FC = () => {
       title='库存管理'
       extraButtons={
         <Button type='primary' onClick={() => navigate('/stock/order/create')}>
-          出入库
+          采购
         </Button>
       }
     >

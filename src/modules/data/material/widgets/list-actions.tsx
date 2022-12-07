@@ -2,8 +2,8 @@ import { FC } from 'react'
 import { message, Modal } from 'antd'
 import TableActions, { Action } from '@/shared/widgets/table-actions'
 import { useRequest } from 'ahooks'
-import MaterialService from '@/services/material'
-import { Material } from '@/entities/material'
+import MaterialService from '../service'
+import { Material } from '../model'
 
 interface IMaterialActionsProps {
   data: Material

@@ -1,7 +1,6 @@
 import { FC, ReactNode } from 'react'
-import { Table, Tag } from 'antd'
-import { displayEffects, displayFormula, displaySuitCrowds, displayTeabagCategory, Teabag } from '@/entities/teabag'
-import type { ColumnType } from 'antd/es/table'
+import { Table, Tag, TableColumnType } from 'antd'
+import { displayEffects, displayFormula, displaySuitCrowds, displayTeabagCategory, Teabag } from '../model'
 
 interface ITeabagTableProps {
   list: Teabag[]
@@ -9,7 +8,7 @@ interface ITeabagTableProps {
 }
 
 const TeabagTable: FC<ITeabagTableProps> = ({ list, renderActions }) => {
-  const columns: ColumnType<Teabag>[] = [
+  const columns: TableColumnType<Teabag>[] = [
     // {
     //   dataIndex: '_id',
     //   title: 'ID',

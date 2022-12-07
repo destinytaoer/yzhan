@@ -4,10 +4,10 @@ import StockSelector from './stock-selector'
 
 import { useNavigate } from 'react-router-dom'
 import { useRequest } from 'ahooks'
-import StockService from '@/services/stock'
+import StockService from '../service'
 import { useStockTeabags } from '../helpers/useStockTeabags'
 import { createFormToCreateData, StockOrderFormData } from '../helpers/mapper'
-import { StockOrderType, StockOrderTypeMap } from '@/entities/stock-order'
+import { StockOrderType, StockOrderTypeMap } from '../model'
 
 const StockOrderForm: FC = () => {
   const navigate = useNavigate()

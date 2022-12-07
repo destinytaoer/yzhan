@@ -1,10 +1,7 @@
-import { app, db } from '@/services/cloudbase'
-import request from './request'
-import { stockApi } from '@/services/apis'
-import { Stock } from '@/entities/stock'
-import { CreateStockOrder, StockOrder } from '@/entities/stock-order'
+import { app, db } from '@/shared/services/cloudbase'
+import { Stock } from '@/modules/stock/model/stock'
+import { CreateStockOrder, StockOrder } from '@/modules/stock/model/stock-order'
 
-const _ = db.command
 export default class StockService {
   static getStocks() {
     return (

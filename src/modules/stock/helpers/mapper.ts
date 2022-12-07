@@ -1,5 +1,4 @@
-import { calcCreateOrderTotalPrice, CreateStockOrder, PartialStock, StockOrderType } from '@/entities/stock-order'
-import { CommonStockInfo, Stock } from '@/entities/stock'
+import { calcCreateOrderTotalPrice, CreateStockOrder, PartialStock, StockOrderType, CommonStockInfo, Stock } from '../model'
 
 export interface StockFormData {
   _id: string
@@ -28,7 +27,7 @@ export function stockFormListToStockList(teabagList: StockFormData[], commonStoc
   return teabagList.map((item) => {
     const stock = commonStockList.find((s) => item._id === s._id)!
 
-    if (!stock){
+    if (!stock) {
       console.error(`${item._id} Not Found`)
     }
 

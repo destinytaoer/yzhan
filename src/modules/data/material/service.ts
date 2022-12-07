@@ -1,6 +1,12 @@
-import { Material } from '@/entities/material'
-import { materialApi } from './apis'
-import request from './request'
+import { Material } from '@/modules/data/material/model'
+import request from '@/shared/services/request'
+
+export const materialApi = {
+  list: '/material/list',
+  create: '/material/create',
+  update: '/material/update',
+  remove: '/material/remove',
+}
 
 export default class MaterialService {
   static list() {

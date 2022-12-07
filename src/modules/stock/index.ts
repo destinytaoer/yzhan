@@ -1,1 +1,2 @@
-export { StockManagementRoute, StockManagementMenuItems } from './router'
+export { default as StockService } from './service'
+export * as StockRouter from './router'

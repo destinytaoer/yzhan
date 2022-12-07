@@ -1,9 +1,13 @@
-import { Teabag, PartialTeabag } from '@/entities/teabag'
-import { db } from './cloudbase'
-import { teabagApi } from './apis'
-import request from './request'
+import { Teabag, PartialTeabag } from '@/modules/data/teabag/model'
+import { db } from '@/shared/services/cloudbase'
+import request from '@/shared/services/request'
 
 const collection = db.collection('teabag')
+
+export const teabagApi = {
+  list: '/teabag/list',
+  create: '/teabag/create',
+}
 
 export default class TeabagService {
   static collection = collection

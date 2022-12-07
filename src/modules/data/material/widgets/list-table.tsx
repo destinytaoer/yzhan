@@ -1,7 +1,6 @@
 import { FC, ReactNode } from 'react'
-import { Table } from 'antd'
-import { displayMaterialCategory, Material } from '@/entities/material'
-import type { ColumnType } from 'antd/es/table'
+import { Table, TableColumnType } from 'antd'
+import { displayMaterialCategory, Material } from '../model'
 
 interface IMaterialTableProps {
   list: Material[]
@@ -9,7 +8,7 @@ interface IMaterialTableProps {
 }
 
 const MaterialTable: FC<IMaterialTableProps> = ({ list, renderActions }) => {
-  const columns: ColumnType<Material>[] = [
+  const columns: TableColumnType<Material>[] = [
     {
       dataIndex: '_id',
       title: 'ID',

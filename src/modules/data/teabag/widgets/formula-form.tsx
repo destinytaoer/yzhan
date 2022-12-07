@@ -2,7 +2,7 @@ import { FC, useMemo } from 'react'
 import { Form, Space, Select, Input, Button } from 'antd'
 import { PlusOutlined, MinusCircleOutlined } from '@ant-design/icons'
 import { useRequest } from 'ahooks'
-import MaterialService from '@/services/material'
+import MaterialService from '../service'
 
 interface IFormulaFormProps {
   fieldName: string

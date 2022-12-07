@@ -8,8 +8,8 @@ import CreateOrEditMaterialModal from '../widgets/create-or-edit-modal'
 
 import { useModal } from '@/shared/hooks/useModal'
 import { useRequest } from 'ahooks'
-import MaterialService from '@/services/material'
-import { Material } from '@/entities/material'
+import MaterialService from '../service'
+import { Material } from '../model'
 
 const MaterialListPage: FC = () => {
   const { data, refresh } = useRequest(MaterialService.list)

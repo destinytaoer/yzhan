@@ -5,7 +5,7 @@ import { MaterialListPage } from './material'
 import { TeabagListPage } from './teabag'
 import { GiftBoxListPage } from './gift-box'
 
-export const DataManagementRoute: RouteObject[] = [
+export const Route: RouteObject[] = [
   {
     path: '/data/material',
     element: <MaterialListPage />,
@@ -20,7 +20,7 @@ export const DataManagementRoute: RouteObject[] = [
   },
 ]
 
-export const DataManagementMenuItems: MenuProps['items'] = [
+export const MenuItems: MenuProps['items'] = [
   {
     label: <Link to='/data/material'>原材料管理</Link>,
     key: 'material',

@@ -1,1 +1,1 @@
-export { DataManagementMenuItems, DataManagementRoute } from './router'
+export * as DataManagementRouter from './router'

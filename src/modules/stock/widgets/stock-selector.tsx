@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Form, InputNumber, Button, Select, Row, Col } from 'antd'
 import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons'
-import { CommonStockInfo } from '@/entities/stock'
+import { CommonStockInfo } from '../model'
 
 interface IStockSelectorProps {
   fieldName: string

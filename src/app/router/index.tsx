@@ -1,8 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { GlobalLayout, WithSiderLayout, NoSiderLayout } from '../layout'
 import { HomePage } from '@/modules/home'
-import { DataManagementRoute, DataManagementMenuItems } from '@/modules/data'
-import { StockManagementRoute, StockManagementMenuItems } from '@/modules/stock'
+import { DataManagementRouter } from '@/modules/data'
+import { StockRouter } from '@/modules/stock'
 import ErrorPage from './error'
 import NotFoundPage from './404'
 
@@ -14,13 +14,13 @@ export const router = createBrowserRouter([
     children: [
       {
         path: '/stock',
-        element: <WithSiderLayout menus={StockManagementMenuItems} />,
-        children: StockManagementRoute,
+        element: <WithSiderLayout menus={StockRouter.MenuItems} />,
+        children: StockRouter.Route,
       },
       {
         path: '/data',
-        element: <WithSiderLayout menus={DataManagementMenuItems} />,
-        children: DataManagementRoute,
+        element: <WithSiderLayout menus={DataManagementRouter.MenuItems} />,
+        children: DataManagementRouter.Route,
       },
       {
         path: '/',

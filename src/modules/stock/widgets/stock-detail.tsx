@@ -1,7 +1,7 @@
 import { FC, RefObject } from 'react'
 import { Descriptions, Drawer, Table, TableColumnType } from 'antd'
 import { IModalRef, useModalImperative } from '@/shared/hooks/useModalImperative'
-import { displayStockType, Stock, StockBatch } from '@/entities/stock'
+import { displayStockType, Stock, StockBatch } from '../model'
 
 interface IStockDetailProps {
   modalRef: RefObject<IModalRef<Stock>>

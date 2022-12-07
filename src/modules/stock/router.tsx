@@ -5,7 +5,7 @@ import StockListPage from './views/stock-list'
 import StockOrderListPage from './views/stock-order-list'
 import CreateStockOrderPage from './views/create-stock-order'
 
-export const StockManagementRoute: RouteObject[] = [
+export const Route: RouteObject[] = [
   {
     index: true,
     element: <StockListPage />,
@@ -20,7 +20,7 @@ export const StockManagementRoute: RouteObject[] = [
   },
 ]
 
-export const StockManagementMenuItems: MenuProps['items'] = [
+export const MenuItems: MenuProps['items'] = [
   {
     label: <Link to='/stock'>库存管理</Link>,
     key: 'stock',

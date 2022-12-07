@@ -1,5 +1,5 @@
+import { PriceSet } from '@/shared/model/price'
 import { Material } from './material'
-import { PriceSet } from '../shared/model/price'
 
 /**
  * 茶包

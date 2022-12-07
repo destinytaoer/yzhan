@@ -1,4 +1,4 @@
-import { PriceSet } from '../shared/model/price'
+import { PriceSet } from '@/shared/model/price'
 
 /**
  * 原材料

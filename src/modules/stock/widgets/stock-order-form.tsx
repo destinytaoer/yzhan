@@ -7,7 +7,7 @@ import { useRequest } from 'ahooks'
 import StockService from '../service'
 import { useStockTeabags } from '../helpers/useStockTeabags'
 import { createFormToCreateData, StockOrderFormData } from '../helpers/mapper'
-import { StockOrderType, StockOrderTypeMap } from '../model'
+import { StockOrderType, StockOrderTypeMap } from '../model/stock-order'
 
 const StockOrderForm: FC = () => {
   const navigate = useNavigate()

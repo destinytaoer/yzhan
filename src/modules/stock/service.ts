@@ -1,4 +1,4 @@
-import { app, db } from '@/shared/services/cloudbase'
+import { app, db } from '@/shared/aspects/cloudbase'
 import { Stock } from '@/modules/stock/model/stock'
 import { CreateStockOrder, StockOrder } from '@/modules/stock/model/stock-order'
 

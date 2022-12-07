@@ -1,5 +1,5 @@
 import { PriceSet } from '@/shared/model/price'
-import { Material } from '../../material/model'
+import { MaterialModel } from '@/modules/data/material'
 
 /**
  * 茶包
@@ -113,7 +113,7 @@ export function displaySuitCrowds(suit_crowds: SuitCrowds[]) {
     .filter((item) => !!item)
 }
 
-export interface TeabagMaterial extends Material {
+export interface TeabagMaterial extends MaterialModel.Material {
   // 数量, 以字符串主要考虑到是以展示为主, 为了更加灵活
   // 满足 1-2 等情况
   quantity: string

@@ -3,7 +3,7 @@ import { Table, TableColumnType } from 'antd'
 import TableActions from '@/shared/widgets/table-actions'
 import { useRequest } from 'ahooks'
 import StockService from '../service'
-import { displayStockOrderType, StockOrder } from '../model'
+import { displayStockOrderType, StockOrder } from '../model/stock-order'
 
 const StockOrderTable: FC = () => {
   const { data } = useRequest(StockService.getStockOrders)

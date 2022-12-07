@@ -1,5 +1,5 @@
 import { Material } from '@/modules/data/material/model'
-import request from '@/shared/services/request'
+import request from '@/shared/aspects/request'
 
 export const materialApi = {
   list: '/material/list',

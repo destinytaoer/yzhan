@@ -1,6 +1,6 @@
 import { Teabag, PartialTeabag } from '@/modules/data/teabag/model'
-import { db } from '@/shared/services/cloudbase'
-import request from '@/shared/services/request'
+import { db } from '@/shared/aspects/cloudbase'
+import request from '@/shared/aspects/request'
 
 const collection = db.collection('teabag')
 

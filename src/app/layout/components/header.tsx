@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { Layout, Menu, MenuProps } from 'antd'
 import { Link } from 'react-router-dom'
 import { DatabaseOutlined } from '@ant-design/icons'
-import Logo from '../logo'
+import Logo from '@/shared/widgets/logo'
 
 const { Header } = Layout
 

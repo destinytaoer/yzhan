@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { message, Modal } from 'antd'
-import TableActions, { Action } from '@/widgets/table-actions'
+import TableActions, { Action } from '@/shared/widgets/table-actions'
 import { useRequest } from 'ahooks'
 import TeabagService from '@/services/teabag'
 import { Teabag } from '@/entities/teabag'

@@ -1,6 +1,6 @@
 import { FC, memo } from 'react'
 import { Table, TableColumnType } from 'antd'
-import TableActions from '@/widgets/table-actions'
+import TableActions from '@/shared/widgets/table-actions'
 import StockDetail from './stock-detail'
 
 import { useRequest } from 'ahooks'

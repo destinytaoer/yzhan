@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { Button } from 'antd'
-import ListPageContainer from '@/widgets/list-page-container'
+import ListPageContainer from '@/shared/widgets/list-page-container'
 import { MaterialActions, MaterialTable, MaterialDetail, EditMaterialModal } from '@/features/material'
 
 import { useModal } from '@/shared/hooks/useModal'

@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { Button } from 'antd'
-import ListPageContainer from '@/widgets/list-page-container'
+import ListPageContainer from '@/shared/widgets/list-page-container'
 import { StockTable } from '@/features/stock'
 import { useNavigate } from 'react-router-dom'
 

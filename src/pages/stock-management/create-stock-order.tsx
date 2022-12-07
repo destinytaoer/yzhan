@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import CreatePageContainer from '@/widgets/create-page-container'
+import CreatePageContainer from '@/shared/widgets/create-page-container'
 import { StockOrderForm } from '@/features/stock'
 import { useNavigate } from 'react-router-dom'
 

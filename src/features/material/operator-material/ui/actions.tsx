@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { message, Modal } from 'antd'
-import TableActions, { Action } from '@/widgets/table-actions'
+import TableActions, { Action } from '@/shared/widgets/table-actions'
 import { useRequest } from 'ahooks'
 import MaterialService from '@/services/material'
 import { Material } from '@/entities/material'

@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { Button } from 'antd'
-import ListPageContainer from '@/widgets/list-page-container'
+import ListPageContainer from '@/shared/widgets/list-page-container'
 import { TeabagTable, TeabagDetail, TeabagActions, CreateOrEditTeabagModal } from '@/features/teabag'
 
 import { useRequest } from 'ahooks'

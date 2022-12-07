@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Layout } from 'antd'
 import { Outlet } from 'react-router-dom'
-import GlobalFooter from '@/widgets/footer'
+import GlobalFooter from './components/footer'
 
 const { Content } = Layout
 

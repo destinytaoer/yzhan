@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Layout } from 'antd'
 import { Outlet } from 'react-router-dom'
-import GlobalHeader from '@/widgets/header'
+import GlobalHeader from './components/header'
 
 const { Content } = Layout
 

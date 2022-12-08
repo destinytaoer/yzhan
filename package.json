@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "tcb hosting deploy dist"
   },
   "dependencies": {
     "@ant-design/icons": "^4.8.0",

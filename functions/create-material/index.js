@@ -11,9 +11,12 @@ const db = app.database()
 
 exports.main = async function (event) {
   const data = JSON.parse(event.body)
+  const headers = event.headers
+  const _openid = headers['x-userid']
 
   const now = db.serverDate()
   return db.collection('material').add({
+    _openid,
     ...data,
     created_at: now,
     updated_at: now,

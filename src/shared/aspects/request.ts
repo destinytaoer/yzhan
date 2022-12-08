@@ -14,12 +14,14 @@ axiosInstance.interceptors.request.use(
     // 2.比如每次发送网络请求时,都希望在界面中显示一个请求的图标(然后再响应拦截中取消显示)
     // 3.某些网络请求必须携带一些特殊的信息(如登录token),如果没有携带就可以拦截并作响应提示
     const authHeader = auth.getAuthHeader()
+    const user = auth.currentUser
 
     return {
       ...config,
       headers: {
         ...config.headers,
         ...authHeader,
+        'x-userid': user?.uid ?? '',
       },
     }
   },

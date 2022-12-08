@@ -12,6 +12,9 @@ const db = app.database()
 
 exports.main = async function (event) {
   const data = JSON.parse(event.body)
+  const headers = event.headers
+  const _openid = headers['x-userid']
+
   const formula_ids = data.formula.map((item) => item._id)
   const teabagId = uuid()
 
@@ -21,6 +24,7 @@ exports.main = async function (event) {
   const now = db.serverDate()
   const res = await teabagCollection.add({
     _id: teabagId,
+    _openid,
     ...data,
     formula_ids,
     created_at: now,
@@ -32,7 +36,7 @@ exports.main = async function (event) {
     type: 'TEABAG',
     name: data.name,
     remnant_inventory: 0,
-    batch_list: []
+    batch_list: [],
   })
 
   await transaction.commit()

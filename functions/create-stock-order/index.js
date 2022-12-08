@@ -19,14 +19,12 @@ const typePrefixMap = {
   SALE: 'SL-',
 }
 
-exports.main = async function (event, context) {
-  // const data = JSON.parse(event.body)
-  const data = event
+exports.main = async function (event) {
+  const data = JSON.parse(event.body)
   const { type, total_price } = data
   const created_at = db.serverDate()
-
-  const { userInfo } = await auth.getEndUserInfo()
-  const _openid = userInfo.uid
+  const headers = event.headers
+  const _openid = headers['x-userid']
 
   const _id = `${typePrefixMap[type]}${uuid()}`
 

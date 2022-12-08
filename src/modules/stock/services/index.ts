@@ -5,17 +5,12 @@ import { CreateStockOrder, StockOrder } from '../models/stock-order'
 
 export const stockApi = {
   createOrder: '/stock/order/create',
+  list: '/stock/list',
 }
 
 export default class StockService {
   static getStocks() {
-    return (
-      db
-        .collection('stock')
-        // .where({ remnant_inventory: _.gt(0) })
-        .orderBy('remnant_inventory', 'desc')
-        .get() as Promise<ListResponse<Stock>>
-    )
+    return request.get<ListResponse<Stock>>(stockApi.list)
   }
 
   static getStockOrders() {

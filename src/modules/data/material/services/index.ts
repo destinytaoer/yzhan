@@ -13,7 +13,7 @@ export default class MaterialService {
     return request.get<ListResponse<Material>>(materialApi.list)
   }
 
-  static create(id: string, data: Partial<Material>) {
+  static create(data: Partial<Material>) {
     return request.post(materialApi.create, data)
   }
 

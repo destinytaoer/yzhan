@@ -9,6 +9,8 @@ const app = cloudbase.init({
 // 数据库引用
 const db = app.database()
 
+const _ = db.command
+
 exports.main = async function () {
   return db
     .collection('stock')

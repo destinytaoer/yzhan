@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import { useRequest } from 'ahooks'
 import { TeabagService } from '@/modules/data/teabag'
-import { getStockId, StockType } from '../model/stock'
+import { getStockId, StockType } from '../models/stock'
 
 export const useStockTeabags = () => {
   const { data, loading } = useRequest(TeabagService.list)

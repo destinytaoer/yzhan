@@ -2,8 +2,8 @@ import { FC, RefObject, useEffect } from 'react'
 import { Button, Form, Input, InputNumber, message, Modal, Select } from 'antd'
 import { IModalRef, useModalImperative } from '@/shared/hooks/useModalImperative'
 import { useRequest } from 'ahooks'
-import MaterialService from '../service'
-import { Material, MaterialLabelMap } from '../model'
+import MaterialService from '../services'
+import { Material, MaterialLabelMap } from '../models'
 
 interface ICreateOrEditMaterialModalProps {
   modalRef: RefObject<IModalRef<Material | undefined>>

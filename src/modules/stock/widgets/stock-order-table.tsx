@@ -2,8 +2,8 @@ import { FC } from 'react'
 import { Table, TableColumnType } from 'antd'
 import TableActions from '@/shared/widgets/table-actions'
 import { useRequest } from 'ahooks'
-import StockService from '../service'
-import { displayStockOrderType, StockOrder } from '../model/stock-order'
+import StockService from '../services'
+import { displayStockOrderType, StockOrder } from '../models/stock-order'
 
 const StockOrderTable: FC = () => {
   const { data } = useRequest(StockService.getStockOrders)

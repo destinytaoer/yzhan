@@ -1,6 +1,6 @@
 import { app, db } from '@/shared/aspects/cloudbase'
-import { Stock } from '@/modules/stock/model/stock'
-import { CreateStockOrder, StockOrder } from '@/modules/stock/model/stock-order'
+import { Stock } from '../models/stock'
+import { CreateStockOrder, StockOrder } from '../models/stock-order'
 
 export default class StockService {
   static getStocks() {
@@ -17,13 +17,12 @@ export default class StockService {
     return db.collection('stock-order').orderBy('created_at', 'desc').get() as Promise<ListResponse<StockOrder>>
   }
 
-  static createStockOrder(createData: CreateStockOrder) {
-    // return request.post(stockApi.createOrder, createData)
+  static createStockOrder(data: CreateStockOrder) {
     return app.callFunction({
       // 云函数名称
       name: 'create-stock-order',
       // 传给云函数的参数
-      data: createData,
+      data,
     })
   }
 }

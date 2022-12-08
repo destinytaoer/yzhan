@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react'
 import { Table, TableColumnType } from 'antd'
-import { displayMaterialCategory, Material } from '../model'
+import { displayMaterialCategory, Material } from '../models'
 
 interface IMaterialTableProps {
   list: Material[]

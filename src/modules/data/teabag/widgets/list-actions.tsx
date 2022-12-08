@@ -2,8 +2,8 @@ import { FC } from 'react'
 import { message, Modal } from 'antd'
 import TableActions, { Action } from '@/shared/widgets/table-actions'
 import { useRequest } from 'ahooks'
-import TeabagService from '../service'
-import { Teabag } from '../model'
+import TeabagService from '../services'
+import { Teabag } from '../models'
 
 interface ITeabagActionsProps {
   data: Teabag

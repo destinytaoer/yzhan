@@ -1,4 +1,4 @@
-import { Teabag, PartialTeabag } from '@/modules/data/teabag/model'
+import { Teabag, PartialTeabag } from '../models'
 import { db } from '@/shared/aspects/cloudbase'
 import request from '@/shared/aspects/request'
 
@@ -10,8 +10,6 @@ export const teabagApi = {
 }
 
 export default class TeabagService {
-  static collection = collection
-
   static list() {
     return request.get<ListResponse<Teabag>>(teabagApi.list)
   }

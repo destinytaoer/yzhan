@@ -8,8 +8,8 @@ import CreateOrEditTeabagModal from '../widgets/create-or-edit-modal'
 
 import { useRequest } from 'ahooks'
 import { useModal } from '@/shared/hooks/useModal'
-import TeabagService from '../service'
-import { Teabag } from '../model'
+import TeabagService from '../services'
+import { Teabag } from '../models'
 
 const TeabagListPage: FC = () => {
   const { data, refresh } = useRequest(TeabagService.list)

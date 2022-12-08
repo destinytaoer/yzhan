@@ -4,8 +4,8 @@ import FormulaForm from './formula-form'
 
 import { useRequest } from 'ahooks'
 import { IModalRef, useModalImperative } from '@/shared/hooks/useModalImperative'
-import TeabagService from '../service'
-import { Teabag, PartialTeabag, TeabagCategoryMap, SuitCrowdsMap, splitEffects } from '../model'
+import TeabagService from '../services'
+import { Teabag, PartialTeabag, TeabagCategoryMap, SuitCrowdsMap, splitEffects } from '../models'
 
 interface ICreateOrEditTeabagModalProps {
   modalRef: RefObject<IModalRef<Teabag | undefined>>

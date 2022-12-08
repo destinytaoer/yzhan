@@ -3,7 +3,7 @@ import { Descriptions, Drawer } from 'antd'
 
 import { useModalImperative, IModalRef } from '@/shared/hooks/useModalImperative'
 import { displayGradientPrice } from '@/shared/model/price'
-import { displayTeabagCategory, Teabag } from '../model'
+import { displayTeabagCategory, Teabag } from '../models'
 
 interface ITeabagDetailProps {
   modalRef: RefObject<IModalRef<Teabag>>

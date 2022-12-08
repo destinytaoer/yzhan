@@ -1,5 +1,5 @@
-import { CommonStockInfo, Stock } from '../model/stock'
-import { calcCreateOrderTotalPrice, CreateStockOrder, PartialStock, StockOrderType} from '../model/stock-order'
+import { CommonStockInfo, Stock } from '../models/stock'
+import { calcCreateOrderTotalPrice, CreateStockOrder, PartialStock, StockOrderType} from '../models/stock-order'
 
 export interface StockFormData {
   _id: string

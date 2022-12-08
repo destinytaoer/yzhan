@@ -1,5 +1,5 @@
 import Big from 'big.js'
-import { calcStockTotalPrice, Stock, StockType } from '@/modules/stock/model/stock'
+import { calcStockTotalPrice, Stock, StockType } from './stock'
 
 /**
  * 出入库单

@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react'
 import { Table, Tag, TableColumnType } from 'antd'
-import { displayEffects, displayFormula, displaySuitCrowds, displayTeabagCategory, Teabag } from '../model'
+import { displayEffects, displayFormula, displaySuitCrowds, displayTeabagCategory, Teabag } from '../models'
 
 interface ITeabagTableProps {
   list: Teabag[]

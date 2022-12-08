@@ -1,4 +1,4 @@
-import { Material } from '@/modules/data/material/model'
+import { Material } from '../models'
 import request from '@/shared/aspects/request'
 
 export const materialApi = {

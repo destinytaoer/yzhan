@@ -1,6 +1,11 @@
-import { app, db } from '@/shared/aspects/cloudbase'
+import request from '@/shared/aspects/request'
+import { db } from '@/shared/aspects/cloudbase'
 import { Stock } from '../models/stock'
 import { CreateStockOrder, StockOrder } from '../models/stock-order'
+
+export const stockApi = {
+  createOrder: '/stock/order/create',
+}
 
 export default class StockService {
   static getStocks() {
@@ -18,11 +23,6 @@ export default class StockService {
   }
 
   static createStockOrder(data: CreateStockOrder) {
-    return app.callFunction({
-      // 云函数名称
-      name: 'create-stock-order',
-      // 传给云函数的参数
-      data,
-    })
+    return request.post(stockApi.createOrder, data)
   }
 }

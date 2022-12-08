@@ -1,11 +1,11 @@
 import request from '@/shared/aspects/request'
-import { db } from '@/shared/aspects/cloudbase'
 import { Stock } from '../models/stock'
 import { CreateStockOrder, StockOrder } from '../models/stock-order'
 
 export const stockApi = {
-  createOrder: '/stock/order/create',
   list: '/stock/list',
+  orderCreate: '/stock/order/create',
+  orderList: '/stock/order/list',
 }
 
 export default class StockService {
@@ -14,10 +14,10 @@ export default class StockService {
   }
 
   static getStockOrders() {
-    return db.collection('stock-order').orderBy('created_at', 'desc').get() as Promise<ListResponse<StockOrder>>
+    return request.get<ListResponse<StockOrder>>(stockApi.orderList)
   }
 
   static createStockOrder(data: CreateStockOrder) {
-    return request.post(stockApi.createOrder, data)
+    return request.post(stockApi.orderCreate, data)
   }
 }
